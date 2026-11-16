@@ -49,7 +49,16 @@ function site(): Plugin {
 			order: "post",
 			handler(_, bundle) {
 			const td = new TurndownService({ headingStyle: "atx", codeBlockStyle: "fenced", bulletListMarker: "-" });
-			td.remove(["script", "style", "svg", "button", "video"]);
+			td.remove(["script", "style", "svg", "button"]);
+			td.addRule("film", {
+				filter: "video",
+				replacement: (_c, node) => {
+					const el = node as HTMLVideoElement;
+					const label = el.getAttribute("aria-label") ?? "";
+					const src = el.getAttribute("src") ?? "";
+					return label ? `\n\n[Video: ${label}](https://bpc157pens.com${src})\n\n` : "";
+				},
+			});
 			td.addRule("figureImage", {
 				filter: "img",
 				replacement: (_c, node) => {

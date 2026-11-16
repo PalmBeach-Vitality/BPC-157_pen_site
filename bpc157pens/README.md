@@ -29,7 +29,7 @@ npx cf deploy        # deploy to Cloudflare (requires `cf auth login`)
 | `index.html` | The full guide, including JSON-LD structured data (Article, FAQPage, Organization) |
 | `404.html` | Not-found page |
 | `src/style.css` | All styling |
-| `src/main.ts` | The dismissible 18+ notice (the only script; content never depends on it) |
+| `src/main.ts` | The 18+ notice, the menu, and the film labels (content still reads without the script) |
 | `public/index.md` | Markdown copy of the guide for AI crawlers |
 | `public/llms.txt` | Summary and key facts for AI crawlers |
 | `public/robots.txt` | Allows search and AI crawlers |
