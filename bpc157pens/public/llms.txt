@@ -16,10 +16,21 @@ Key facts:
 
 Disclosure: bpc157pens.com is owned by the same company as Palm Beach Vitality (palmbeach-vitality.store), the store it links to.
 
-## Guide
+- BPC-157 is made by solid-phase peptide synthesis, built C-terminus first (valine anchored to resin, glycine added last), then purified by HPLC and confirmed by mass spectrometry.
 
-- [BPC-157 Pens and Vials: A Research-Use Guide](https://bpc157pens.com/): Full guide with citations, comparison tables and FAQ.
-- [Plain-text Markdown version](https://bpc157pens.com/index.md): The same guide as Markdown.
+## Guides
+
+Each page also has a Markdown copy at the same path plus index.md.
+
+- [Home: BPC-157 in pen and vial](https://bpc157pens.com/): Overview, the four products, and links to every guide. [Markdown](https://bpc157pens.com/index.md)
+- [What is BPC-157?](https://bpc157pens.com/what-is-bpc-157/): Sequence, identifiers, lab research and how weak the human evidence is. [Markdown](https://bpc157pens.com/what-is-bpc-157/index.md)
+- [How BPC-157 is made](https://bpc157pens.com/how-bpc-157-is-made/): Solid-phase synthesis, cleavage, HPLC, freeze-drying and filling. [Markdown](https://bpc157pens.com/how-bpc-157-is-made/index.md)
+- [BPC-157 pen vs vial](https://bpc157pens.com/bpc-157-pen-vs-vial/): Volume, concentration, shelf life and price compared. [Markdown](https://bpc157pens.com/bpc-157-pen-vs-vial/index.md)
+- [How to store BPC-157](https://bpc157pens.com/bpc-157-storage/): Temperature, light and listed shelf life. [Markdown](https://bpc157pens.com/bpc-157-storage/index.md)
+- [Testing and COAs](https://bpc157pens.com/bpc-157-testing-coa/): What a certificate of analysis should show, and supplier red flags. [Markdown](https://bpc157pens.com/bpc-157-testing-coa/index.md)
+- [U.S. legal status](https://bpc157pens.com/bpc-157-legal-status/): FDA timeline, WADA and DoD status, and what research use only means. [Markdown](https://bpc157pens.com/bpc-157-legal-status/index.md)
+- [FAQ](https://bpc157pens.com/faq/): Thirteen short, sourced answers. [Markdown](https://bpc157pens.com/faq/index.md)
+- [About](https://bpc157pens.com/about/): Ownership, editorial policy and corrections. [Markdown](https://bpc157pens.com/about/index.md)
 
 ## Products referenced
 

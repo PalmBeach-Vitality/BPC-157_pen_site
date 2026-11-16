@@ -6,8 +6,18 @@ import { defineConfig, type Plugin } from "vite";
 
 const root = import.meta.dirname;
 
-// Full page list returns once each page file exists. Empty string is the homepage.
-export const pages = [""];
+// Empty string is the homepage.
+export const pages = [
+	"",
+	"what-is-bpc-157",
+	"how-bpc-157-is-made",
+	"bpc-157-pen-vs-vial",
+	"bpc-157-storage",
+	"bpc-157-testing-coa",
+	"bpc-157-legal-status",
+	"faq",
+	"about",
+];
 
 function pagePath(file: string): string {
 	const rel = file.slice(root.length).replace(/\\/g, "/");
@@ -35,7 +45,9 @@ function site(): Plugin {
 				);
 			},
 		},
-		generateBundle(_, bundle) {
+		generateBundle: {
+			order: "post",
+			handler(_, bundle) {
 			const td = new TurndownService({ headingStyle: "atx", codeBlockStyle: "fenced", bulletListMarker: "-" });
 			td.remove(["script", "style", "svg", "button", "video"]);
 			td.addRule("figureImage", {
@@ -46,6 +58,39 @@ function site(): Plugin {
 					const src = el.getAttribute("src") ?? "";
 					return alt ? `![${alt}](https://bpc157pens.com${src})` : "";
 				},
+			});
+			const cellText = (el: Element) =>
+				(el.textContent ?? "").replace(/\s+/g, " ").replace(/\|/g, "\\|").trim();
+			td.addRule("table", {
+				filter: "table",
+				replacement: (_c, node) => {
+					const table = node as HTMLTableElement;
+					const caption = table.querySelector("caption");
+					const rows = Array.from(table.querySelectorAll("tr")).map((tr) =>
+						Array.from(tr.children).map(cellText),
+					);
+					if (!rows.length) return "";
+					const width = Math.max(...rows.map((r) => r.length));
+					const line = (r: string[]) =>
+						`| ${Array.from({ length: width }, (_, i) => r[i] ?? "").join(" | ")} |`;
+					const head = table.querySelector("thead") ? rows.shift()! : Array(width).fill("");
+					const out = [line(head), `|${" --- |".repeat(width)}`, ...rows.map(line)];
+					return `\n\n${caption ? `${cellText(caption)}\n\n` : ""}${out.join("\n")}\n\n`;
+				},
+			});
+			td.addRule("definitionList", {
+				filter: "dl",
+				replacement: (_c, node) => {
+					const items = Array.from((node as Element).querySelectorAll("dt")).map((dt) => {
+						const dd = dt.nextElementSibling;
+						return `- **${cellText(dt)}:** ${dd ? cellText(dd) : ""}`;
+					});
+					return `\n\n${items.join("\n")}\n\n`;
+				},
+			});
+			td.addRule("diagram", {
+				filter: (node) => node.nodeName.toLowerCase() === "svg" && node.getAttribute("role") === "img",
+				replacement: (_c, node) => `\n\n*Diagram: ${(node as Element).getAttribute("aria-label") ?? ""}*\n\n`,
 			});
 			td.addRule("hidden", {
 				filter: (node) => (node as HTMLElement).hasAttribute?.("data-md-skip"),
@@ -68,6 +113,7 @@ function site(): Plugin {
 					source: `<!-- ${title} | ${canonical} -->\n\n${md}\n`,
 				});
 			}
+			},
 		},
 	};
 }
