@@ -14,6 +14,7 @@ export default defineConfig({
 			htmlHandling: "auto-trailing-slash",
 			notFoundHandling: "404-page",
 		},
+		domains: ["bpc157pens.com", "www.bpc157pens.com"],
 		workersDev: true,
 	},
 });
