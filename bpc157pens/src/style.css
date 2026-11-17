@@ -2159,6 +2159,16 @@ tbody th {
   border-left-color: var(--aqua);
 }
 
+/* Sample size on What it is, for review before the other guides. */
+.toc--sample {
+  font-size: calc(0.88rem * 1.15);
+}
+
+.toc--sample p {
+  font-weight: 700;
+  font-size: calc(11px * 1.25);
+}
+
 .block {
   padding: 8px 0 48px;
 }
