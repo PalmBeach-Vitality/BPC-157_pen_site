@@ -1906,6 +1906,98 @@ tbody th {
   color: var(--mute);
 }
 
+/* Research studies */
+.study {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 22px 28px;
+  align-items: start;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+}
+
+.study h3 {
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  margin: 0 0 8px;
+}
+
+.journal-plate {
+  margin: 0;
+}
+
+.journal-plate svg {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.study-by {
+  font: 500 12.5px/1.45 var(--mono);
+  color: var(--aqua-ink);
+  margin: 0 0 12px;
+}
+
+.study .answer {
+  margin-bottom: 14px;
+}
+
+.study-note {
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
+.study-note sup a {
+  font-weight: 500;
+}
+
+.study-cite {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--mute);
+}
+
+.study-cite a {
+  white-space: nowrap;
+}
+
+.held {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: held 20;
+}
+
+.held li {
+  counter-increment: held;
+  padding: 16px 0 16px 44px;
+  border-top: 1px solid var(--line);
+  position: relative;
+}
+
+.held li::before {
+  content: counter(held);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  font: 500 12px/1 var(--mono);
+  color: var(--mute);
+}
+
+.held p {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+}
+
+.study-why {
+  color: var(--ink-2);
+}
+
 /* Page head (inner pages) */
 .page-head {
   padding: clamp(40px, 6vw, 80px) 0 clamp(28px, 4vw, 48px);
@@ -2470,5 +2562,10 @@ tbody th {
   .next-guide {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .study {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 14px 16px;
   }
 }

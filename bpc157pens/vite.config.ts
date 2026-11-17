@@ -15,6 +15,7 @@ export const pages = [
 	"bpc-157-storage",
 	"bpc-157-testing-coa",
 	"bpc-157-legal-status",
+	"bpc-157-research",
 	"faq",
 	"about",
 ];

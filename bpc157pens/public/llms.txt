@@ -30,6 +30,7 @@ Each page also has a Markdown copy at the same path plus index.md.
 - [How to store BPC-157](https://bpc157pens.com/bpc-157-storage/): Temperature, light and listed shelf life. [Markdown](https://bpc157pens.com/bpc-157-storage/index.md)
 - [Testing and COAs](https://bpc157pens.com/bpc-157-testing-coa/): What a certificate of analysis should show, and supplier red flags. [Markdown](https://bpc157pens.com/bpc-157-testing-coa/index.md)
 - [U.S. legal status](https://bpc157pens.com/bpc-157-legal-status/): FDA timeline, WADA and DoD status, and what research use only means. [Markdown](https://bpc157pens.com/bpc-157-legal-status/index.md)
+- [Research: 20 studies](https://bpc157pens.com/bpc-157-research/): Twenty peer-reviewed BPC-157 papers chosen from thirty, each with the authors and a plain-language note. Ten further papers are listed and explained as set aside. [Markdown](https://bpc157pens.com/bpc-157-research/index.md)
 - [FAQ](https://bpc157pens.com/faq/): Thirteen short, sourced answers. [Markdown](https://bpc157pens.com/faq/index.md)
 - [About](https://bpc157pens.com/about/): Ownership, editorial policy and corrections. [Markdown](https://bpc157pens.com/about/index.md)
 
