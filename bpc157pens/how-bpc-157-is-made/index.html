@@ -44,15 +44,27 @@
     <!--@include header-->
     <main id="main">
       <section class="page-head gridded">
-        <div class="wrap split">
-          <div>
+        <div class="wrap">
             <ol class="crumbs" data-md-skip><li><a href="/">Home</a></li><li>How it&rsquo;s made</li></ol>
+          <div class="head-grid">
+            <div class="head-copy">
             <p class="eyebrow">Guide · Production</p>
             <h1>How <span class="nowrap">BPC-157</span> is <em>made.</em></h1>
             <p class="lede"><strong>BPC-157 is made by solid-phase peptide synthesis:</strong> a machine adds one amino acid at a time to a chain anchored on tiny resin beads. The finished chain is cut free, purified by HPLC, checked by mass spectrometry, then filled into pens or vials.<sup><a href="#src-1">1</a>,<a href="#src-2">2</a></sup></p>
             <p class="byline">By the bpc157pens.com Editorial Team · Last reviewed <time datetime="2026-11-15">November 15, 2026</time></p>
+            </div>
+            <nav class="toc" aria-label="On this page" data-md-skip>
+              <p>On this page</p>
+              <ol>
+                <li><a href="#overview">The short version</a></li>
+                <li><a href="#synthesis">Why it&rsquo;s built backward</a></li>
+                <li><a href="#steps">Seven steps</a></li>
+                <li><a href="#chain">Watch the chain form</a></li>
+                <li><a href="#sources">Sources</a></li>
+              </ol>
+            </nav>
           </div>
-          <figure class="media">
+          <figure class="media head-film">
             <div class="frame frame--hud frame--film">
               <video src="/media/film-production.mp4" poster="/media/film-production.jpg" controls playsinline preload="none" width="1440" height="960" aria-label="One-minute film of BPC-157 production in a bright lab: peptide synthesis on resin beads, HPLC purification, crimp-sealing vials, and inspecting finished pens"></video>
               <p class="readout" data-md-skip><span>Synthesis</span><span>Purification</span><span>Filling</span><span>Pens</span></p>
@@ -63,18 +75,7 @@
       </section>
 
       <div class="wrap page-body">
-        <div class="page-layout">
-          <nav class="toc" aria-label="On this page" data-md-skip>
-            <p>On this page</p>
-            <ol>
-              <li><a href="#overview">The short version</a></li>
-              <li><a href="#synthesis">Why it&rsquo;s built backward</a></li>
-              <li><a href="#steps">Seven steps</a></li>
-              <li><a href="#chain">Watch the chain form</a></li>
-              <li><a href="#sources">Sources</a></li>
-            </ol>
-          </nav>
-          <article>
+        <article>
             <section id="overview" class="block">
               <h2>The short <em>version</em></h2>
               <p class="answer">Research peptides are almost always made chemically, not extracted from the body. The standard method, solid-phase peptide synthesis, was introduced by Bruce Merrifield in 1963 and is now automated.<sup><a href="#src-1">1</a></sup> Most labs use the Fmoc version of it.<sup><a href="#src-2">2</a></sup></p>
@@ -97,37 +98,37 @@
                 <li class="reveal">
                   <span class="process-dot">01</span>
                   <div><p class="tagline">Building blocks</p><h3>Weigh the amino acids</h3><p>Protected amino acids, one type for each position, are weighed out as fine white powders. BPC-157 uses eight different amino acids across its 15 positions.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-materials.jpg" alt="Gloved hands weighing white amino acid powder on an analytical balance in a bright lab" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-materials.jpg" alt="Gloved hands weighing white amino acid powder on an analytical balance in a bright lab" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">02</span>
                   <div><p class="tagline">Chain assembly</p><h3>Grow the chain on resin</h3><p>An automated synthesizer runs one deprotect, wash, couple and wash cycle per amino acid, building the sequence on resin beads inside a glass reaction vessel.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-synthesizer.jpg" alt="A scientist adjusting tubing on an automated peptide synthesizer with a glass reaction vessel of resin beads" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-synthesizer.jpg" alt="A scientist adjusting tubing on an automated peptide synthesizer with a glass reaction vessel of resin beads" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">03</span>
                   <div><p class="tagline">Cleavage</p><h3>Release the peptide</h3><p>An acid treatment in a fume hood cuts the finished chain from the resin and removes the remaining protecting groups, leaving crude peptide.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-cleavage.jpg" alt="A scientist in safety glasses watching a swirling flask inside a bright fume hood" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-cleavage.jpg" alt="A scientist in safety glasses watching a swirling flask inside a bright fume hood" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">04</span>
                   <div><p class="tagline">Purification</p><h3>Separate by HPLC</h3><p>High-performance liquid chromatography separates full-length BPC-157 from shorter or flawed chains. Mass spectrometry then confirms the molecular weight, about 1419.5 g/mol.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-purify.jpg" alt="A scientist pointing to a single peak on an HPLC chromatogram beside a fraction collector" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-purify.jpg" alt="A scientist pointing to a single peak on an HPLC chromatogram beside a fraction collector" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">05</span>
                   <div><p class="tagline">Freeze-drying</p><h3>Dry to a stable powder</h3><p>Purified peptide is usually freeze-dried (lyophilized) into a powder that is easier to store and ship before it is dissolved for liquid products.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-lyophilize.jpg" alt="A gloved hand sliding out a freeze-dryer shelf of blue-capped vials" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-lyophilize.jpg" alt="A gloved hand sliding out a freeze-dryer shelf of blue-capped vials" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">06</span>
                   <div><p class="tagline">Fill and seal</p><h3>Dissolve and fill</h3><p>For ready-to-use formats, the peptide is dissolved and filled into 10 mL vials or 3 mL pen cartridges, then sealed. Palm Beach Vitality vials come in 2, 5 and 10 mL sizes; BPC-157 uses the 10 mL vial.<sup><a href="#src-3">3</a></sup></p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-filling.jpg" alt="Gloved hands crimping a silver seal onto a vial beside 2, 5 and 10 mL vials with blue caps" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-filling.jpg" alt="Gloved hands crimping a silver seal onto a vial beside 2, 5 and 10 mL vials with blue caps" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
                 <li class="reveal">
                   <span class="process-dot">07</span>
                   <div><p class="tagline">Inspection</p><h3>Label and check</h3><p>Each pen and vial is labeled with its lot number, which ties it to that batch&rsquo;s certificate of analysis.</p></div>
-                  <figure class="media"><div class="frame"><img src="/media/make-pens.jpg" alt="A gloved hand inspecting a BPC-157 pen against the window light above a tray of pens" width="1536" height="1024" loading="lazy" /><span class="mock-tag mock-tag--image" data-md-skip>Image</span></div></figure>
+                  <figure class="media"><div class="frame"><img src="/media/make-pens.jpg" alt="A gloved hand inspecting a BPC-157 pen against the window light above a tray of pens" width="1536" height="1024" loading="lazy" /></div></figure>
                 </li>
               </ol>
             </section>
@@ -156,7 +157,6 @@
 
             <a class="next-guide" href="/bpc-157-pen-vs-vial/" data-md-skip><span><small>Next guide</small><strong>BPC-157 pen vs vial</strong></span><span aria-hidden="true">→</span></a>
           </article>
-        </div>
       </div>
     </main>
     <!--@include footer-->
