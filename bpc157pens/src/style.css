@@ -2127,11 +2127,11 @@ tbody th {
 .toc {
   position: sticky;
   top: 100px;
-  font-size: 0.88rem;
+  font-size: calc(0.88rem * 1.15);
 }
 
 .toc p {
-  font: 500 11px/1 var(--mono);
+  font: 700 calc(11px * 1.25)/1 var(--mono);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--mute);
@@ -2157,16 +2157,6 @@ tbody th {
 .toc a:hover {
   color: var(--ink);
   border-left-color: var(--aqua);
-}
-
-/* Sample size on What it is, for review before the other guides. */
-.toc--sample {
-  font-size: calc(0.88rem * 1.15);
-}
-
-.toc--sample p {
-  font-weight: 700;
-  font-size: calc(11px * 1.25);
 }
 
 .block {
