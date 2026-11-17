@@ -105,16 +105,8 @@
                 <figcaption>The same bright lab used across this site. Illustrative film of a purity run, not footage from Accumark Labs.</figcaption>
               </figure>
 
-              <div class="story" data-story data-auto="5200" tabindex="0" aria-label="HPLC chart, step by step">
-                <div class="chart-story">
-                  <img src="/media/coa-hplc-chart.jpg" alt="HPLC chromatogram from the KLOW pen certificate: a tall peak at 1.148 minutes, smaller peaks near 4, 7 and 7.6 minutes, and a flat line after that. Signal is in milli-absorbance units, time in minutes." width="1208" height="645" />
-                  <button class="chart-spot" type="button" style="left:7%;top:16%;width:34%;height:14%" aria-label="Detector settings"></button>
-                  <button class="chart-spot" type="button" style="left:1%;top:22%;width:8%;height:62%" aria-label="Signal axis"></button>
-                  <button class="chart-spot" type="button" style="left:8%;top:84%;width:88%;height:14%" aria-label="Time axis"></button>
-                  <button class="chart-spot" type="button" style="left:8%;top:24%;width:9%;height:60%" aria-label="Main peak"></button>
-                  <button class="chart-spot" type="button" style="left:24%;top:62%;width:30%;height:22%" aria-label="Smaller peaks"></button>
-                  <button class="chart-spot" type="button" style="left:58%;top:28%;width:36%;height:52%" aria-label="Quiet stretch of the trace"></button>
-                </div>
+<!--@include hplc-diagram-->
+              <div class="story" data-story data-auto="5200" tabindex="0" aria-label="How to read the chart, step by step">
                 <div class="story-bar" data-md-skip>
                   <div class="story-dots"></div>
                   <button type="button" data-prev aria-label="Previous step">Back</button>
@@ -122,12 +114,11 @@
                   <button type="button" data-play aria-pressed="true">Pause</button>
                 </div>
                 <div class="story-notes">
-                  <button class="story-card" type="button"><p class="tagline">01 · The detector</p><strong>Light at 220 nm</strong><p>The line at the top left is the instrument note. A diode-array detector watched ultraviolet light at 220 nanometers, a wavelength peptides absorb. That is what the pen on the chart is measuring.</p></button>
-                  <button class="story-card" type="button"><p class="tagline">02 · The height</p><strong>How strong the signal is</strong><p>The vertical axis is milli-absorbance units. Taller means more of whatever is passing the detector at that moment. It is not yet a name, only an amount of signal.</p></button>
-                  <button class="story-card" type="button"><p class="tagline">03 · The clock</p><strong>Minutes in the column</strong><p>The horizontal axis is time since the sample entered the column. Different molecules travel at different speeds, so they arrive, and peak, at different minutes.</p></button>
-                  <button class="story-card" type="button"><p class="tagline">04 · The tall peak</p><strong>1.148 minutes</strong><p>Almost all of the signal is this one spike, just after one minute. On this blend certificate the lab reported the combined purity as 99.78 percent, which is this dominant peak&rsquo;s share of the whole trace.</p></button>
-                  <button class="story-card" type="button"><p class="tagline">05 · The short peaks</p><strong>4.1, 7.0 and 7.6 minutes</strong><p>These smaller spikes are other things leaving the column: the other peptides in the blend, or minor impurities. They are real, and they are small next to the main peak.</p></button>
-                  <button class="story-card" type="button"><p class="tagline">06 · The quiet end</p><strong>After 12 minutes</strong><p>The line goes flat. Little else came off the column before the run ended at 20 minutes. A purity percentage does not, by itself, prove which molecule the tall peak is. That is a separate identity test.</p></button>
+                  <button class="story-card" type="button"><p class="tagline">01 · Left to right</p><strong>Time along the bottom</strong><p>The horizontal axis is retention time, in minutes. The sample enters the column at 0. Each molecule travels at its own speed, so it appears at its own minute.</p></button>
+                  <button class="story-card" type="button"><p class="tagline">02 · Bottom to top</p><strong>UV absorbance</strong><p>The vertical axis is how much ultraviolet light the detector absorbed. A taller point means more material was passing the detector at that moment.</p></button>
+                  <button class="story-card" type="button"><p class="tagline">03 · The tall peak</p><strong>The target peptide</strong><p>The large peak is the compound the test was looking for. On a pure sample it should dwarf everything else on the trace.</p></button>
+                  <button class="story-card" type="button"><p class="tagline">04 · The small peaks</p><strong>Impurities</strong><p>The short peaks marked in coral are other material: a shortened chain, leftover reagent, or another ingredient. They count in the purity math.</p></button>
+                  <button class="story-card" type="button"><p class="tagline">05 · The percentage</p><strong>Main peak area divided by every peak</strong><p>Purity is the area under the main peak divided by the area under all the peaks. The chart itself does not name the molecule. Identity is a separate test.</p></button>
                 </div>
               </div>
             </section>
