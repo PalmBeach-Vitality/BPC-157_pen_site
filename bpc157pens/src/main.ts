@@ -166,12 +166,15 @@ function initStories(): void {
     }
     const dotButtons = dots ? Array.from(dots.querySelectorAll("button")) : []
 
+    const chart = root.dataset.chart ? document.querySelector<HTMLElement>(root.dataset.chart) : null
+
     const show = (next: number) => {
       index = (next + count) % count
       if (track) track.style.transform = `translateX(${-index * 100}%)`
       cards.forEach((card, i) => card.classList.toggle("is-on", i === index))
       spots.forEach((spot, i) => spot.classList.toggle("is-on", i === index))
       dotButtons.forEach((dot, i) => dot.setAttribute("aria-current", String(i === index)))
+      chart?.setAttribute("data-step", String(index))
     }
 
     const stop = () => {

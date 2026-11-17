@@ -2134,6 +2134,26 @@ tbody th {
   box-shadow: inset 0 0 0 2px var(--aqua-ink);
 }
 
+.hplc-hl {
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+  pointer-events: none;
+}
+
+.hplc-hl rect {
+  fill: rgba(139, 230, 238, 0.38);
+  stroke: #0a6c79;
+  stroke-width: 1.5;
+}
+
+.diagram[data-step="0"] .hplc-hl[data-hl="0"],
+.diagram[data-step="1"] .hplc-hl[data-hl="1"],
+.diagram[data-step="2"] .hplc-hl[data-hl="2"],
+.diagram[data-step="3"] .hplc-hl[data-hl="3"],
+.diagram[data-step="4"] .hplc-hl[data-hl="4"] {
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .story-track {
     transition: none;
