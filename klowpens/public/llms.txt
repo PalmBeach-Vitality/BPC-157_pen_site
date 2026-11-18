@@ -1,0 +1,50 @@
+# klowpens.com
+
+> Research education about the KLOW pen and vial sold by Palm Beach Vitality. KLOW is a laboratory research blend of four peptides in aqueous solution: KPV, BPC-157, TB-500, and GHK-Cu. It is not one 15-residue chain. KLOW as sold is not an FDA-approved drug. There is no published study of this four-peptide pen or vial as one product. Prices and specifications are the seller's, checked November 18, 2026. Laboratory research use only. Not for human or veterinary use. Written for U.S. researchers.
+
+Key facts:
+
+- KLOW Pen, $232, https://palmbeach-vitality.store/product/klow-pen/ — KPV 10 mg, BPC-157 10 mg, TB-500 10 mg, GHK-Cu 50 mg in a 3 mL pre-filled pen. The seller lists 300 clicks, 0.01 mL per click, and a dial marked 1–60. Those are format specifications, not instructions for use. Concentrations are about 3.33 mg/mL KPV, about 3.33 mg/mL BPC-157, about 3.33 mg/mL TB-500, and about 16.67 mg/mL GHK-Cu. Already in aqueous solution. No reconstitution. Refrigerate at 2–8 °C (36–46 °F). Do not freeze. Protect from light. Seller's practical shelf life: 4–6 weeks.
+- KLOW Vial, $222, https://palmbeach-vitality.store/product/klow-vial/ — the same four amounts in a 10 mL ready-to-use liquid: 1 mg/mL KPV, 1 mg/mL BPC-157, 1 mg/mL TB-500, and 5 mg/mL GHK-Cu. Already in solution. No reconstitution. Same refrigeration rules. Seller's practical shelf life: 16–20 weeks.
+- Freeze-dried KLOW is a bulk order. The vial page says to contact the seller and that a minimum applies. This site does not give a reconstitution guide.
+- KPV is the Lys-Pro-Val tripeptide. BPC-157 is the synthetic 15-amino-acid peptide. TB-500 on this label is the seller's synthetic actin-binding fragment of thymosin beta-4. The Accumark certificate for the pen names that analyte "TB500 (17–23 Fragment)." GHK-Cu is the copper complex of glycyl-L-histidyl-L-lysine.
+- The blend is not one 15-residue chain.
+- KLOW as sold is not an FDA-approved drug. BPC-157, one of the four components, has its own FDA record at https://bpc157pens.com/bpc-157-legal-status/ . That page is about the component, not about KLOW.
+- This site does not say the name KLOW is on the WADA list. BPC-157 is prohibited in sport under WADA S0. That note is on the same BPC-157 page. No status is invented here for the blend name.
+- There is no published study of this four-peptide pen or vial as one product. The seller's reading list is five component papers: PMIDs 18061177, 12750433, 34267654, 18644225, and 22074294. Authors are cited for their papers. They did not write, review, or endorse this site.
+- The KLOW pen certificate is Accumark Labs sample 8V4W-UP8E, lot KL102126, received October 22, 2026, published October 26, 2026. Declared size 80.0 mg. Measured total 77.046 mg. Blend purity 99.78%. Page 2 reports KPV 11.039 mg at 99.092%, GHK-Cu 45.219 mg at 99.884%, BPC-157 9.688 mg at 99.881%, and TB500 (17–23 Fragment) 11.1 mg at 99.986%. Those measured figures are this lot. They are not a rewrite of the 10/10/10/50 mg label.
+- klowpens.com does not provide dosing, click-count instructions for use, or a reconstitution guide.
+
+Disclosure: klowpens.com and Palm Beach Vitality are the same company. Product links use rel="sponsored" and utm_source=klowpens, utm_medium=referral, utm_campaign=site.
+
+## Guides
+
+Each page also has a Markdown copy at the same path plus index.md.
+
+- [Home: KLOW in pen and vial](https://klowpens.com/): Overview, the two products, and links to every guide. [Markdown](https://klowpens.com/index.md)
+- [What KLOW is](https://klowpens.com/what-is-klow/): The four components and the labeled amounts. [Markdown](https://klowpens.com/what-is-klow/index.md)
+- [How KLOW is made](https://klowpens.com/how-klow-is-made/): Each component by the general solid-phase method, then combined in solution and filled. [Markdown](https://klowpens.com/how-klow-is-made/index.md)
+- [KLOW pen vs vial](https://klowpens.com/klow-pen-vs-vial/): Volume, concentration, shelf life, and price. [Markdown](https://klowpens.com/klow-pen-vs-vial/index.md)
+- [Storage](https://klowpens.com/klow-storage/): Temperature, light, and the seller's practical shelf life. [Markdown](https://klowpens.com/klow-storage/index.md)
+- [Testing and the COA](https://klowpens.com/klow-testing-coa/): The Accumark certificate for the KLOW pen, and how to read its chromatogram. [Markdown](https://klowpens.com/klow-testing-coa/index.md)
+- [U.S. status](https://klowpens.com/klow-legal-status/): The blend is not an approved drug. One component has its own record. [Markdown](https://klowpens.com/klow-legal-status/index.md)
+- [Research](https://klowpens.com/klow-research/): No study of the product. Five component papers, described honestly. [Markdown](https://klowpens.com/klow-research/index.md)
+- [FAQ](https://klowpens.com/faq/): Short sourced answers. [Markdown](https://klowpens.com/faq/index.md)
+- [About](https://klowpens.com/about/): Ownership, editorial policy, and corrections. [Markdown](https://klowpens.com/about/index.md)
+
+## Products referenced
+
+- [KLOW Pen](https://palmbeach-vitality.store/product/klow-pen/): $232. 10 / 10 / 10 / 50 mg in a 3 mL pre-filled pen.
+- [KLOW Vial](https://palmbeach-vitality.store/product/klow-vial/): $222. The same amounts in a 10 mL ready-to-use liquid.
+
+## Key sources
+
+- Palm Beach Vitality, KLOW Pen product page, checked November 18, 2026. https://palmbeach-vitality.store/product/klow-pen/
+- Palm Beach Vitality, KLOW Vial product page, checked November 18, 2026. https://palmbeach-vitality.store/product/klow-vial/
+- Palm Beach Vitality, KLOW research reading list. https://palmbeach-vitality.store/research/klow/
+- Accumark Labs. Certificate of analysis for KLOW Pen, sample 8V4W-UP8E, lot KL102126, published October 26, 2026.
+- Dalmasso et al., 2008, PMID 18061177. KPV only.
+- Getting, Schiöth, and Perretti, 2003, PMID 12750433. KPV only.
+- Seiwerth et al., 2021, PMID 34267654. BPC-157 only.
+- Pickart, 2008, PMID 18644225. GHK and GHK-Cu only.
+- Goldstein et al., 2012, PMID 22074294. Thymosin β4, not the fragment in this pen and not the blend.
