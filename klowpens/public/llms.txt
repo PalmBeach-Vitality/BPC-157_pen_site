@@ -22,7 +22,7 @@ Disclosure: klowpens.com and Palm Beach Vitality are the same company. Product l
 Each page also has a Markdown copy at the same path plus index.md.
 
 - [Home: KLOW in pen and vial](https://klowpens.com/): Overview, the two products, and links to every guide. [Markdown](https://klowpens.com/index.md)
-- [What KLOW is](https://klowpens.com/what-is-klow/): The four components and the labeled amounts. [Markdown](https://klowpens.com/what-is-klow/index.md)
+- [What KLOW is](https://klowpens.com/what-is-klow/): The four components, the labeled amounts, and an artistic one-minute film of the three residues in GHK-Cu. That film is GHK only, not the blend. [Markdown](https://klowpens.com/what-is-klow/index.md)
 - [How KLOW is made](https://klowpens.com/how-klow-is-made/): Each component by the general solid-phase method, then combined in solution and filled. [Markdown](https://klowpens.com/how-klow-is-made/index.md)
 - [KLOW pen vs vial](https://klowpens.com/klow-pen-vs-vial/): Volume, concentration, shelf life, and price. [Markdown](https://klowpens.com/klow-pen-vs-vial/index.md)
 - [Storage](https://klowpens.com/klow-storage/): Temperature, light, and the seller's practical shelf life. [Markdown](https://klowpens.com/klow-storage/index.md)

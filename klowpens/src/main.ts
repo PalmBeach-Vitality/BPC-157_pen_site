@@ -63,6 +63,74 @@ function initReveal(): void {
   items.forEach((el) => io.observe(el))
 }
 
+// GHK is Gly-His-Lys. The bead end of the film is lysine, then histidine, then glycine at the free end.
+const GHK_ORDER: [number, string, string][] = [
+  [3, "Lys", "Lysine"],
+  [2, "His", "Histidine"],
+  [1, "Gly", "Glycine"],
+]
+
+// Four 15.042s shots. The chain reaches 1, then 2, then the third sphere locks late in the last shot.
+const GHK_KNOTS: [number, number][] = [
+  [0, 0],
+  [15.042, 1],
+  [30.083, 2],
+  [56.1, 3],
+]
+
+function ghkJoinedAt(t: number): number {
+  for (let i = 1; i < GHK_KNOTS.length; i++) {
+    const [t1, n1] = GHK_KNOTS[i]
+    const [t0, n0] = GHK_KNOTS[i - 1]
+    if (t <= t1) {
+      const count = Math.round(n0 + ((t - t0) / (t1 - t0)) * (n1 - n0))
+      return Math.max(0, Math.min(3, count))
+    }
+  }
+  return 3
+}
+
+function initGhkFilm(): void {
+  document.querySelectorAll<HTMLVideoElement>("video[data-ghk]").forEach((video) => {
+    const frame = video.parentElement
+    const label = frame?.querySelector<HTMLElement>(".join-label")
+    const list = video.closest("section")?.querySelector<HTMLOListElement>(".residues--ghk")
+    const items = list ? Array.from(list.querySelectorAll<HTMLLIElement>("li")) : []
+    let shown = -1
+
+    const render = () => {
+      const active = !video.paused || video.currentTime > 0.05
+      const count = ghkJoinedAt(video.currentTime)
+      label?.classList.toggle("is-on", active && count > 0)
+      list?.classList.toggle("is-tracking", active && !video.ended && count > 0)
+      if (count === shown) return
+      shown = count
+      if (count === 0 || !label) {
+        if (label) label.replaceChildren()
+        items.forEach((li) => li.classList.remove("is-joined", "is-new"))
+        return
+      }
+      const [pos, code, name] = GHK_ORDER[count - 1]
+      label.replaceChildren()
+      const index = document.createElement("span")
+      index.className = "join-label-n"
+      index.textContent = `${String(count).padStart(2, "0")} / 03`
+      const text = document.createElement("span")
+      text.textContent = `${code} · ${name}`
+      label.append(index, text)
+      items.forEach((li, i) => {
+        const position = i + 1
+        li.classList.toggle("is-joined", position >= 4 - count)
+        li.classList.toggle("is-new", position === pos)
+      })
+    }
+
+    ;["loadedmetadata", "timeupdate", "play", "pause", "seeked", "ended"].forEach((ev) =>
+      video.addEventListener(ev, render),
+    )
+  })
+}
+
 function initAmbientFilms(): void {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)")
   document.querySelectorAll<HTMLVideoElement>("video[data-ambient]").forEach((video) => {
@@ -138,5 +206,6 @@ function initStories(): void {
 initAgeNotice()
 initMenu()
 initReveal()
+initGhkFilm()
 initAmbientFilms()
 initStories()
