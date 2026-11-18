@@ -989,17 +989,65 @@ figcaption {
   color: #e0a06a;
 }
 
+.night#ghk-cu {
+  background: #140e0a;
+  color: #f3e6d8;
+}
+
+.night#ghk-cu .eyebrow,
+.night#ghk-cu h2 em {
+  color: #e0a06a;
+}
+
+.night#ghk-cu::before {
+  background:
+    radial-gradient(60% 60% at 80% 20%, rgba(196, 122, 69, 0.32), transparent 70%),
+    radial-gradient(40% 50% at 10% 90%, rgba(224, 160, 106, 0.18), transparent 70%),
+    linear-gradient(to right, rgba(224, 160, 106, 0.2) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(to bottom, rgba(224, 160, 106, 0.2) 1px, transparent 1px) 0 0 / 64px 64px;
+}
+
+.night#ghk-cu p,
+.night#ghk-cu figcaption {
+  color: rgba(243, 230, 216, 0.9);
+}
+
+.frame--ghk {
+  box-shadow: 0 0 0 1px rgba(224, 160, 106, 0.55), 0 40px 80px -40px rgba(0, 0, 0, 0.8);
+}
+
 .ghk-chain .residues--ghk {
   width: calc(3 * (100% - 14 * 6px) / 15 + 2 * 6px);
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.ghk-chain .residues--ghk li {
+  border-color: #e8a15a;
+  background: rgba(176, 96, 42, 0.62);
+}
+
+.ghk-chain .residues--ghk .res-code {
+  color: #fff;
+}
+
+.ghk-chain .residues--ghk .res-n,
+.ghk-chain .residues--ghk .res-one {
+  color: #ffd7b0;
+}
+
 .ghk-chain .residue-key {
   justify-content: flex-start;
   gap: 28px;
+  color: #f0b27a;
 }
 
-.residues--ghk.is-tracking li.is-new {
+.ghk-chain .residues--ghk.is-tracking li {
+  opacity: 1;
+}
+
+.ghk-chain .residues--ghk.is-tracking li.is-new {
+  border-color: #f2c09a;
+  background: rgba(224, 160, 106, 0.34);
   box-shadow: 0 0 0 1px #e0a06a, 0 0 22px -4px #e0a06a;
 }
 
