@@ -40,10 +40,19 @@ function site(): Plugin {
 				for (let i = 0; i < 3; i++) {
 					out = out.replace(/<!--@include ([\w-]+)-->/g, (_, name: string) => partial(name));
 				}
-				return out.replace(
+				out = out.replace(
 					new RegExp(`(<a[^>]*data-nav[^>]*href="${path}")`, "g"),
 					'$1 aria-current="page"',
 				);
+				// The shared head allows indexing. The 404 page adds noindex;
+				// drop the index tag so crawlers do not see both.
+				if (ctx.filename.endsWith("404.html")) {
+					out = out.replace(
+						/\s*<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" \/>/,
+						"",
+					);
+				}
+				return out;
 			},
 		},
 		generateBundle: {
