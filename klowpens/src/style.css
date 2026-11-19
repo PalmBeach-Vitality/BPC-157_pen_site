@@ -2743,3 +2743,157 @@ tbody th {
     gap: 14px 16px;
   }
 }
+
+/* Bench. Homepage only. Blue is the ground and the graph. Copper is the italic word, the button, and the top bar. */
+.theme-bench {
+  --paper: #0e1c34;
+  --paper-2: #12243f;
+  --card: #17304e;
+  --ink: #f4f0e8;
+  --ink-2: rgba(244, 240, 232, 0.78);
+  --mute: rgba(244, 240, 232, 0.55);
+  --line: rgba(143, 184, 222, 0.18);
+  --line-2: rgba(143, 184, 222, 0.4);
+  --aqua: #8fb8de;
+  --aqua-ink: #8fb8de;
+  --aqua-soft: rgba(143, 184, 222, 0.14);
+  --glow: #8fb8de;
+  --gold: #e2a36a;
+  --coral: #e2a36a;
+  --night: #081426;
+  --night-2: #0e1c34;
+  --night-line: rgba(143, 184, 222, 0.16);
+  background: #0e1c34;
+  color: #f4f0e8;
+}
+
+.theme-bench .ruo-bar {
+  background: #283549;
+  color: #e2a36a;
+}
+
+.theme-bench .site-header {
+  background: rgba(14, 28, 52, 0.92);
+  border-bottom-color: rgba(143, 184, 222, 0.16);
+}
+
+.theme-bench .brand-word em,
+.theme-bench h1 em,
+.theme-bench h2 em,
+.theme-bench .brand--light .brand-word em {
+  color: #e2a36a;
+}
+
+.theme-bench .site-nav a {
+  color: rgba(244, 240, 232, 0.86);
+}
+
+.theme-bench .site-nav a:hover,
+.theme-bench .site-nav a[aria-current="page"] {
+  background: rgba(143, 184, 222, 0.12);
+  color: #f4f0e8;
+}
+
+.theme-bench .site-nav .nav-cta,
+.theme-bench .btn--solid,
+.theme-bench .btn--glow {
+  background: #e2a36a;
+  color: #0e1c34;
+}
+
+.theme-bench .site-nav .nav-cta:hover,
+.theme-bench .btn--solid:hover,
+.theme-bench .btn--glow:hover {
+  background: #f3d2b0;
+  color: #0e1c34;
+}
+
+.theme-bench .btn--ghost {
+  background: transparent;
+  color: #f4f0e8;
+  box-shadow: inset 0 0 0 1px rgba(143, 184, 222, 0.45);
+}
+
+.theme-bench .btn--ghost:hover {
+  box-shadow: inset 0 0 0 1px #e2a36a;
+  color: #f4f0e8;
+}
+
+.theme-bench .eyebrow {
+  color: #8fb8de;
+}
+
+.theme-bench .gridded::before {
+  background-image:
+    linear-gradient(to right, rgba(143, 184, 222, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(143, 184, 222, 0.16) 1px, transparent 1px);
+}
+
+.theme-bench .gridded::after {
+  background: radial-gradient(closest-side, rgba(23, 48, 78, 0.85), transparent);
+}
+
+.theme-bench .chain-line {
+  stroke: rgba(143, 184, 222, 0.55);
+}
+
+.theme-bench .chain-node,
+.theme-bench .chain-node.is-lit,
+.theme-bench .chain-node.is-pro {
+  fill: transparent;
+  stroke: #8fb8de;
+  filter: none;
+}
+
+.theme-bench .chain-label {
+  fill: rgba(244, 240, 232, 0.62);
+}
+
+.theme-bench .readout span::before {
+  background: #e2a36a;
+  box-shadow: 0 0 8px #e2a36a;
+}
+
+.theme-bench .night {
+  color: #f4f0e8;
+}
+
+.theme-bench .night::before {
+  background:
+    radial-gradient(60% 60% at 80% 20%, rgba(143, 184, 222, 0.14), transparent 70%),
+    linear-gradient(to right, rgba(143, 184, 222, 0.14) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(to bottom, rgba(143, 184, 222, 0.14) 1px, transparent 1px) 0 0 / 64px 64px;
+}
+
+.theme-bench .night .eyebrow {
+  color: #8fb8de;
+}
+
+.theme-bench .night p,
+.theme-bench .night figcaption {
+  color: rgba(244, 240, 232, 0.78);
+}
+
+.theme-bench .night a {
+  color: #e2a36a;
+}
+
+.theme-bench .step-card--link {
+  background: #081426;
+  color: #f4f0e8;
+  box-shadow: inset 0 0 0 1px rgba(226, 163, 106, 0.5);
+}
+
+.theme-bench .step-card--link:hover {
+  background: #17304e;
+  color: #f4f0e8;
+}
+
+.theme-bench .step-card--link h3 {
+  color: #f4f0e8;
+}
+
+.theme-bench .footer-nav a:hover,
+.theme-bench .site-footer a:hover {
+  color: #e2a36a;
+}
