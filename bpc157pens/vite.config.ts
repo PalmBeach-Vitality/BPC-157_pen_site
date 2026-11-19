@@ -18,6 +18,13 @@ export const pages = [
 	"bpc-157-research",
 	"faq",
 	"about",
+	"lab-notes",
+	"lab-notes/2026-11-16-reading-a-bpc-157-certificate",
+	"lab-notes/2026-11-09-already-in-solution",
+	"lab-notes/2026-11-02-advisory-vote-is-not-a-final-rule",
+	"lab-notes/2026-10-26-two-pen-strengths-one-cartridge",
+	"lab-notes/2026-10-19-what-the-human-evidence-review-counted",
+	"lab-notes/2026-10-05-fifteen-residues-written-out",
 ];
 
 function pagePath(file: string): string {

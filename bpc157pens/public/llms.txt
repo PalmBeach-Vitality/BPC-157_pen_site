@@ -34,6 +34,18 @@ Each page also has a Markdown copy at the same path plus index.md.
 - [FAQ](https://bpc157pens.com/faq/): Thirteen sourced answers. Standard pens and vials ship already in solution. [Markdown](https://bpc157pens.com/faq/index.md)
 - [About](https://bpc157pens.com/about/): Ownership, editorial policy and corrections. [Markdown](https://bpc157pens.com/about/index.md)
 
+## Lab Notes
+
+Written notes, one page each, listed by month and date. No images.
+
+- [Lab Notes](https://bpc157pens.com/lab-notes/): Index, newest first. [Markdown](https://bpc157pens.com/lab-notes/index.md)
+- [November 16, 2026: What to read on a BPC-157 certificate](https://bpc157pens.com/lab-notes/2026-11-16-reading-a-bpc-157-certificate/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-16-reading-a-bpc-157-certificate/index.md)
+- [November 9, 2026: Pens and vials that arrive already in solution](https://bpc157pens.com/lab-notes/2026-11-09-already-in-solution/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-09-already-in-solution/index.md)
+- [November 2, 2026: The advisory vote is not a final rule](https://bpc157pens.com/lab-notes/2026-11-02-advisory-vote-is-not-a-final-rule/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-02-advisory-vote-is-not-a-final-rule/index.md)
+- [October 26, 2026: Two pen strengths, one cartridge size](https://bpc157pens.com/lab-notes/2026-10-26-two-pen-strengths-one-cartridge/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-26-two-pen-strengths-one-cartridge/index.md)
+- [October 19, 2026: What the human-evidence review counted](https://bpc157pens.com/lab-notes/2026-10-19-what-the-human-evidence-review-counted/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-19-what-the-human-evidence-review-counted/index.md)
+- [October 5, 2026: Fifteen residues, written out](https://bpc157pens.com/lab-notes/2026-10-05-fifteen-residues-written-out/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-05-fifteen-residues-written-out/index.md)
+
 ## Products referenced
 
 - [BPC-157 10mg Pen](https://palmbeach-vitality.store/product/bpc-157-10mg-pen/?utm_source=bpc157pens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_10mg): 10 mg in a 3 mL pre-filled pen.
