@@ -18,6 +18,13 @@ export const pages = [
 	"klow-research",
 	"faq",
 	"about",
+	"lab-notes",
+	"lab-notes/2026-11-16-reading-the-klow-pen-certificate",
+	"lab-notes/2026-11-09-four-peptides-one-solution",
+	"lab-notes/2026-11-02-the-blend-is-not-an-approved-drug",
+	"lab-notes/2026-10-26-pen-and-vial-as-specifications",
+	"lab-notes/2026-10-19-no-study-of-the-four-together",
+	"lab-notes/2026-10-05-label-and-certificate-are-different-sentences",
 ];
 
 function pagePath(file: string): string {

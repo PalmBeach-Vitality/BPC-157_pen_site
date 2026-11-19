@@ -268,6 +268,8 @@ sup a {
   font-weight: 500;
   padding: 8px 11px;
   border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background 0.2s var(--ease), color 0.2s var(--ease);
 }
 
@@ -2505,6 +2507,51 @@ tbody th {
   }
 }
 
+@media (max-width: 1140px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 20px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 20px 40px -24px rgba(13, 22, 25, 0.35);
+    display: none;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 14px 4px;
+    font-size: 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .site-nav a[aria-current="page"] {
+    box-shadow: none;
+    background: transparent;
+    color: var(--aqua-ink);
+  }
+
+  .site-nav .nav-cta {
+    margin: 14px 0 0;
+    text-align: center;
+    border-radius: 999px;
+    border-bottom: 0;
+  }
+}
+
 @media (max-width: 920px) {
   .menu-toggle {
     display: block;
@@ -2877,4 +2924,97 @@ h2 em {
 .footer-nav a:hover,
 .site-footer a:hover {
   color: #e2a36a;
+}
+
+/* Lab notes: month, then date. Written entries only. No images. */
+.lab-index {
+  padding-bottom: clamp(64px, 8vw, 110px);
+}
+
+.lab-kicker {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin: 0 0 14px;
+}
+
+.lab-lede {
+  margin: 0 0 8px;
+  max-width: 36rem;
+  color: var(--ink-2);
+  font-size: 1.15rem;
+}
+
+.lab-month {
+  margin: 40px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.6vw, 2.15rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.lab-item {
+  padding: 22px 0 18px;
+  border-top: 1px solid var(--line);
+}
+
+.lab-month + .lab-item {
+  margin-top: 12px;
+}
+
+.lab-item time {
+  display: block;
+  margin-bottom: 8px;
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+}
+
+.lab-item h2 {
+  margin: 0 0 8px;
+  max-width: 28ch;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.lab-item h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lab-item h2 a:hover,
+.lab-item h2 a:focus-visible {
+  color: var(--aqua-ink);
+}
+
+.lab-item p {
+  margin: 0;
+  max-width: 42rem;
+  color: var(--ink-2);
+}
+
+.lab-all {
+  margin-top: 8px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.lab-all summary {
+  cursor: pointer;
+  font: 600 0.98rem/1.4 var(--sans);
+  color: var(--ink);
+}
+
+.lab-all summary:hover,
+.lab-all summary:focus-visible {
+  color: var(--aqua-ink);
+}
+
+.lab-note-back {
+  margin-top: 2rem;
 }
