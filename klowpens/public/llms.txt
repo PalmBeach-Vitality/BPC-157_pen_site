@@ -34,15 +34,22 @@ Each page also has a Markdown copy at the same path plus index.md.
 
 ## Lab Notes
 
-Written notes, one page each, listed by month and date. No images.
+The Palm Beach Vitality weekly research notes, posted in full. One page each, listed by month and date. No images.
 
 - [Lab Notes](https://klowpens.com/lab-notes/): Index, newest first. [Markdown](https://klowpens.com/lab-notes/index.md)
-- [November 16, 2026: Reading the KLOW pen certificate](https://klowpens.com/lab-notes/2026-11-16-reading-the-klow-pen-certificate/) [Markdown](https://klowpens.com/lab-notes/2026-11-16-reading-the-klow-pen-certificate/index.md)
-- [November 9, 2026: Four peptides in one solution](https://klowpens.com/lab-notes/2026-11-09-four-peptides-one-solution/) [Markdown](https://klowpens.com/lab-notes/2026-11-09-four-peptides-one-solution/index.md)
-- [November 2, 2026: The blend is not an approved drug](https://klowpens.com/lab-notes/2026-11-02-the-blend-is-not-an-approved-drug/) [Markdown](https://klowpens.com/lab-notes/2026-11-02-the-blend-is-not-an-approved-drug/index.md)
-- [October 26, 2026: Pen and vial, as specifications](https://klowpens.com/lab-notes/2026-10-26-pen-and-vial-as-specifications/) [Markdown](https://klowpens.com/lab-notes/2026-10-26-pen-and-vial-as-specifications/index.md)
-- [October 19, 2026: No study of the four peptides together](https://klowpens.com/lab-notes/2026-10-19-no-study-of-the-four-together/) [Markdown](https://klowpens.com/lab-notes/2026-10-19-no-study-of-the-four-together/index.md)
-- [October 5, 2026: The label and the certificate are different sentences](https://klowpens.com/lab-notes/2026-10-05-label-and-certificate-are-different-sentences/) [Markdown](https://klowpens.com/lab-notes/2026-10-05-label-and-certificate-are-different-sentences/index.md)
+- [November 16, 2026: Liver-drug data and the GLOW pen](https://klowpens.com/lab-notes/2026-11-16-liver-drug-data-and-the-glow-pen/) [Markdown](https://klowpens.com/lab-notes/2026-11-16-liver-drug-data-and-the-glow-pen/index.md)
+- [November 9, 2026: Retatrutide knee data and a semaglutide heart study](https://klowpens.com/lab-notes/2026-11-09-retatrutide-knee-data/) [Markdown](https://klowpens.com/lab-notes/2026-11-09-retatrutide-knee-data/index.md)
+- [November 2, 2026: HHS peptide compounding policy](https://klowpens.com/lab-notes/2026-11-02-hhs-peptide-compounding-policy/) [Markdown](https://klowpens.com/lab-notes/2026-11-02-hhs-peptide-compounding-policy/index.md)
+- [October 26, 2026: Peptide compounding petition](https://klowpens.com/lab-notes/2026-10-26-peptide-compounding-petition/) [Markdown](https://klowpens.com/lab-notes/2026-10-26-peptide-compounding-petition/index.md)
+- [October 19, 2026: Interim peptide access policy](https://klowpens.com/lab-notes/2026-10-19-interim-peptide-access-policy/) [Markdown](https://klowpens.com/lab-notes/2026-10-19-interim-peptide-access-policy/index.md)
+- [October 12, 2026: A possible opening for peptides in Washington](https://klowpens.com/lab-notes/2026-10-12-possible-opening-for-peptides-in-washington/) [Markdown](https://klowpens.com/lab-notes/2026-10-12-possible-opening-for-peptides-in-washington/index.md)
+- [October 5, 2026: Retatrutide phase 3 papers](https://klowpens.com/lab-notes/2026-10-05-retatrutide-phase-3-papers/) [Markdown](https://klowpens.com/lab-notes/2026-10-05-retatrutide-phase-3-papers/index.md)
+- [September 28, 2026: Import alert and Empower](https://klowpens.com/lab-notes/2026-09-28-import-alert-and-empower/) [Markdown](https://klowpens.com/lab-notes/2026-09-28-import-alert-and-empower/index.md)
+- [September 21, 2026: Enforcement and demand](https://klowpens.com/lab-notes/2026-09-21-enforcement-and-demand/) [Markdown](https://klowpens.com/lab-notes/2026-09-21-enforcement-and-demand/index.md)
+- [September 14, 2026: Quiet week](https://klowpens.com/lab-notes/2026-09-14-quiet-week/) [Markdown](https://klowpens.com/lab-notes/2026-09-14-quiet-week/index.md)
+- [September 11, 2026: FDA warning letters](https://klowpens.com/lab-notes/2026-09-11-fda-warning-letters/) [Markdown](https://klowpens.com/lab-notes/2026-09-11-fda-warning-letters/index.md)
+- [August 31, 2026: PCAC follow-ups](https://klowpens.com/lab-notes/2026-08-31-pcac-follow-ups/) [Markdown](https://klowpens.com/lab-notes/2026-08-31-pcac-follow-ups/index.md)
+- [August 28, 2026: FDA compounding next steps](https://klowpens.com/lab-notes/2026-08-28-fda-compounding-next-steps/) [Markdown](https://klowpens.com/lab-notes/2026-08-28-fda-compounding-next-steps/index.md)
 
 ## Products referenced
 
