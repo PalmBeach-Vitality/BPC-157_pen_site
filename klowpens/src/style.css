@@ -2755,11 +2755,14 @@ tbody th {
   border-bottom-color: rgba(143, 184, 222, 0.16);
 }
 
-.brand-word em,
 h1 em,
-h2 em,
-.brand--light .brand-word em {
+h2 em {
   color: #e2a36a;
+}
+
+.brand-word em,
+.brand--light .brand-word em {
+  color: #19a7b8;
 }
 
 .site-nav a {
