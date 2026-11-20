@@ -2476,9 +2476,18 @@ tbody th {
 
 /* Responsive */
 @media (max-width: 1080px) {
+  .header-inner {
+    gap: 12px;
+  }
+
   .site-nav a {
-    padding: 8px 8px;
-    font-size: 0.86rem;
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+
+  .site-nav .nav-cta {
+    margin-left: 4px;
+    padding: 8px 12px;
   }
 
   .steps {
@@ -2504,51 +2513,6 @@ tbody th {
 
   .card-media img {
     max-height: 260px;
-  }
-}
-
-@media (max-width: 1140px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .site-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 10px 20px 20px;
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 20px 40px -24px rgba(13, 22, 25, 0.35);
-    display: none;
-  }
-
-  .site-nav.is-open {
-    display: flex;
-  }
-
-  .site-nav a {
-    padding: 14px 4px;
-    font-size: 1rem;
-    border-radius: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .site-nav a[aria-current="page"] {
-    box-shadow: none;
-    background: transparent;
-    color: var(--aqua-ink);
-  }
-
-  .site-nav .nav-cta {
-    margin: 14px 0 0;
-    text-align: center;
-    border-radius: 999px;
-    border-bottom: 0;
   }
 }
 
