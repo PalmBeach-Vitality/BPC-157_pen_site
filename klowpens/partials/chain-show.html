@@ -1,0 +1,96 @@
+          <div class="chain-show reveal" data-chain-show>
+            <div class="chain-bar">
+              <div class="chain-tabs" role="tablist" aria-label="Chain films, one peptide each">
+                <button type="button" role="tab" id="chain-tab-kpv" aria-controls="chain-panel-kpv" aria-selected="false" tabindex="-1">KPV</button>
+                <button type="button" role="tab" id="chain-tab-bpc" aria-controls="chain-panel-bpc" aria-selected="true">BPC-157</button>
+                <button type="button" role="tab" id="chain-tab-tb" aria-controls="chain-panel-tb" aria-selected="false" tabindex="-1">TB-500</button>
+                <button type="button" role="tab" id="chain-tab-ghk" aria-controls="chain-panel-ghk" aria-selected="false" tabindex="-1">GHK-Cu</button>
+              </div>
+              <div class="chain-move">
+                <button type="button" data-chain-prev aria-label="Previous peptide">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4" /></svg>
+                </button>
+                <button type="button" data-chain-next aria-label="Next peptide">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="chain-slide" role="tabpanel" id="chain-panel-kpv" aria-labelledby="chain-tab-kpv" hidden>
+              <figure class="media">
+                <div class="frame frame--hud chain-wait" style="--hud: var(--glow)">
+                  <div class="chain-wait-copy">
+                    <p class="chain-wait-kicker">KPV · Lys-Pro-Val</p>
+                    <p class="chain-wait-title">K·P·<em>V</em></p>
+                    <p>Three residues. The chain film for this tripeptide is the next one to make. It will be the same kind of picture as the BPC-157 film, in its own palette.</p>
+                  </div>
+                </div>
+                <figcaption>Lysine, proline, valine. This slide waits for that film. It is KPV alone, not the four peptides as one chain.</figcaption>
+              </figure>
+              <ol class="residues residues--short" aria-label="KPV amino acid sequence, positions 1 to 3">
+                <li><span class="res-n">01</span><span class="res-code">Lys</span><span class="res-one">K</span></li>
+                <li class="is-pro"><span class="res-n">02</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                <li><span class="res-n">03</span><span class="res-code">Val</span><span class="res-one">V</span></li>
+              </ol>
+              <p class="residue-key" data-md-skip><span>N-terminus · Lys</span><span>C-terminus · Val</span></p>
+            </div>
+
+            <div class="chain-slide is-on" role="tabpanel" id="chain-panel-bpc" aria-labelledby="chain-tab-bpc">
+              <figure class="media">
+                <div class="frame frame--hud" style="--hud: #e2a36a">
+                  <video data-chain src="/media/film-chain.mp4" poster="/media/film-chain.jpg" controls playsinline preload="none" width="1440" height="960" aria-label="One-minute film of BPC-157 forming: glass spheres with glowing cores join one at a time into a 15-sphere chain on a porous resin bead. This film is BPC-157 alone."></video>
+                  <p class="join-label" aria-hidden="true" data-md-skip></p>
+                </div>
+                <figcaption>One minute, no sound. Press play. Each sphere stands for one amino acid in BPC-157, from valine on the bead to glycine at the free end. An artistic picture of that peptide alone.</figcaption>
+              </figure>
+              <ol class="residues residues--bpc" aria-label="BPC-157 amino acid sequence, positions 1 to 15">
+                <li><span class="res-n">01</span><span class="res-code">Gly</span><span class="res-one">G</span></li>
+                <li><span class="res-n">02</span><span class="res-code">Glu</span><span class="res-one">E</span></li>
+                <li class="is-pro"><span class="res-n">03</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                <li class="is-pro"><span class="res-n">04</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                <li class="is-pro"><span class="res-n">05</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                <li><span class="res-n">06</span><span class="res-code">Gly</span><span class="res-one">G</span></li>
+                <li><span class="res-n">07</span><span class="res-code">Lys</span><span class="res-one">K</span></li>
+                <li class="is-pro"><span class="res-n">08</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                <li><span class="res-n">09</span><span class="res-code">Ala</span><span class="res-one">A</span></li>
+                <li><span class="res-n">10</span><span class="res-code">Asp</span><span class="res-one">D</span></li>
+                <li><span class="res-n">11</span><span class="res-code">Asp</span><span class="res-one">D</span></li>
+                <li><span class="res-n">12</span><span class="res-code">Ala</span><span class="res-one">A</span></li>
+                <li><span class="res-n">13</span><span class="res-code">Gly</span><span class="res-one">G</span></li>
+                <li><span class="res-n">14</span><span class="res-code">Leu</span><span class="res-one">L</span></li>
+                <li><span class="res-n">15</span><span class="res-code">Val</span><span class="res-one">V</span></li>
+              </ol>
+              <p class="residue-key" data-md-skip><span>N-terminus · Gly</span><span>Gold: the four prolines</span><span>C-terminus · Val</span></p>
+            </div>
+
+            <div class="chain-slide" role="tabpanel" id="chain-panel-tb" aria-labelledby="chain-tab-tb" hidden>
+              <figure class="media">
+                <div class="frame frame--hud chain-wait" style="--hud: var(--glow)">
+                  <div class="chain-wait-copy">
+                    <p class="chain-wait-kicker">TB-500 · 17–23 fragment</p>
+                    <p class="chain-wait-title">17–<em>23</em></p>
+                    <p>The pen certificate names the analyte TB500 (17–23 Fragment). The chain film for that fragment is the next one to make, in its own palette.</p>
+                  </div>
+                </div>
+                <figcaption>This slide waits for the TB-500 film. The certificate names a 17–23 fragment. This site does not print a residue string beyond that name.</figcaption>
+              </figure>
+            </div>
+
+            <div class="chain-slide" role="tabpanel" id="chain-panel-ghk" aria-labelledby="chain-tab-ghk" hidden>
+              <figure class="media">
+                <div class="frame frame--hud frame--ghk" style="--hud: #e0a06a">
+                  <video data-ghk src="/media/film-ghk.mp4" poster="/media/film-ghk.jpg" controls playsinline preload="none" width="1440" height="960" aria-label="One-minute film of three glass spheres with copper cores joining on a porous copper bead. The spheres stand for lysine, histidine, and glycine in GHK."></video>
+                  <p class="join-label" aria-hidden="true" data-md-skip></p>
+                </div>
+                <figcaption>One minute, no sound. Press play. Lysine is the sphere on the bead, histidine is the middle sphere, and glycine is the free end. An artistic picture of GHK only. Copper is the complex, not a fourth amino acid.</figcaption>
+              </figure>
+              <div class="ghk-chain">
+                <ol class="residues residues--ghk" aria-label="GHK amino acid sequence, positions 1 to 3">
+                  <li><span class="res-n">01</span><span class="res-code">Gly</span><span class="res-one">G</span></li>
+                  <li><span class="res-n">02</span><span class="res-code">His</span><span class="res-one">H</span></li>
+                  <li><span class="res-n">03</span><span class="res-code">Lys</span><span class="res-one">K</span></li>
+                </ol>
+                <p class="residue-key" data-md-skip><span>N-terminus · Gly</span><span>Copper is the complex, not a residue</span><span>C-terminus · Lys</span></p>
+              </div>
+            </div>
+          </div>
