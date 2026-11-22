@@ -2949,6 +2949,54 @@ h2 em {
   box-shadow: 0 0 8px #e2a36a;
 }
 
+/* Ink flipped to cream for the bench theme. These blocks were built as dark slabs
+   with white type, so they turned into blank cream bars. Put the type back. */
+.next-guide {
+  background: #e2a36a;
+  color: #0e1c34;
+}
+
+.next-guide:hover {
+  background: #f3d2b0;
+  color: #0e1c34;
+}
+
+.next-guide small,
+.next-guide strong {
+  color: #0e1c34;
+}
+
+.story-bar button[aria-pressed="true"] {
+  background: #e2a36a;
+  color: #0e1c34;
+  border-color: #e2a36a;
+}
+
+.coa {
+  color: #17304e;
+  border-color: #d5dee8;
+}
+
+.coa-head,
+.coa dt,
+.coa dd {
+  border-bottom-color: #d5dee8;
+}
+
+.coa-head strong,
+.coa dd {
+  color: #17304e;
+}
+
+.coa dt {
+  color: #5a6d82;
+}
+
+.coa .pin {
+  background: #17304e;
+  color: #f4f0e8;
+}
+
 .night {
   color: #f4f0e8;
 }
