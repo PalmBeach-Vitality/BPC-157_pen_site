@@ -18,21 +18,20 @@
 
             <div class="chain-slide" role="tabpanel" id="chain-panel-kpv" aria-labelledby="chain-tab-kpv" hidden>
               <figure class="media">
-                <div class="frame frame--hud chain-wait" style="--hud: var(--glow)">
-                  <div class="chain-wait-copy">
-                    <p class="chain-wait-kicker">KPV · Lys-Pro-Val</p>
-                    <p class="chain-wait-title">K·P·<em>V</em></p>
-                    <p>Three residues. The chain film for this tripeptide is the next one to make. It will be the same kind of picture as the BPC-157 film, in its own palette.</p>
-                  </div>
+                <div class="frame frame--hud frame--kpv" style="--hud: #7c3aed">
+                  <video data-kpv src="/media/film-kpv.mp4" poster="/media/film-kpv.jpg" controls playsinline preload="none" width="1620" height="1080" aria-label="One-minute film of three glass spheres joining on a bead. The spheres stand for lysine, proline, and valine in KPV."></video>
+                  <p class="join-label" aria-hidden="true" data-md-skip></p>
                 </div>
-                <figcaption>Lysine, proline, valine. This slide waits for that film. It is KPV alone, not the four peptides as one chain.</figcaption>
+                <figcaption>One minute, no sound. Press play. Lysine is the sphere on the bead, proline is the middle sphere, and valine is the free end. An artistic picture of KPV only.</figcaption>
               </figure>
-              <ol class="residues residues--short" aria-label="KPV amino acid sequence, positions 1 to 3">
-                <li><span class="res-n">01</span><span class="res-code">Lys</span><span class="res-one">K</span></li>
-                <li class="is-pro"><span class="res-n">02</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
-                <li><span class="res-n">03</span><span class="res-code">Val</span><span class="res-one">V</span></li>
-              </ol>
-              <p class="residue-key" data-md-skip><span>N-terminus · Lys</span><span>C-terminus · Val</span></p>
+              <div class="kpv-chain">
+                <ol class="residues residues--kpv" aria-label="KPV amino acid sequence, positions 1 to 3">
+                  <li><span class="res-n">01</span><span class="res-code">Lys</span><span class="res-one">K</span></li>
+                  <li class="is-pro"><span class="res-n">02</span><span class="res-code">Pro</span><span class="res-one">P</span></li>
+                  <li><span class="res-n">03</span><span class="res-code">Val</span><span class="res-one">V</span></li>
+                </ol>
+                <p class="residue-key" data-md-skip><span>N-terminus · Lys, on the bead</span><span>C-terminus · Val</span></p>
+              </div>
             </div>
 
             <div class="chain-slide is-on" role="tabpanel" id="chain-panel-bpc" aria-labelledby="chain-tab-bpc">
@@ -65,15 +64,24 @@
 
             <div class="chain-slide" role="tabpanel" id="chain-panel-tb" aria-labelledby="chain-tab-tb" hidden>
               <figure class="media">
-                <div class="frame frame--hud chain-wait" style="--hud: var(--glow)">
-                  <div class="chain-wait-copy">
-                    <p class="chain-wait-kicker">TB-500 · 17–23 fragment</p>
-                    <p class="chain-wait-title">17–<em>23</em></p>
-                    <p>The pen certificate names the analyte TB500 (17–23 Fragment). The chain film for that fragment is the next one to make, in its own palette.</p>
-                  </div>
+                <div class="frame frame--hud frame--tb" style="--hud: #22d3ee">
+                  <video data-tb src="/media/film-tb.mp4" poster="/media/film-tb.jpg" controls playsinline preload="none" width="1620" height="1080" aria-label="One-minute film of seven glass spheres joining on a bead. The spheres stand for the TB500 17 to 23 fragment. Letters are not printed on the spheres."></video>
+                  <p class="join-label" aria-hidden="true" data-md-skip></p>
                 </div>
-                <figcaption>This slide waits for the TB-500 film. The certificate names a 17–23 fragment. This site does not print a residue string beyond that name.</figcaption>
+                <figcaption>One minute, no sound. Press play. Seven spheres, from the bead to the free end. The certificate names this analyte TB500 (17–23 Fragment). This row does not assign letters to the spheres.</figcaption>
               </figure>
+              <div class="tb-chain">
+                <ol class="residues residues--seven" aria-label="TB500 17 to 23 fragment, seven spheres from the bead to the free end">
+                  <li><span class="res-n">01</span><span class="res-code">Bead</span><span class="res-one">1</span></li>
+                  <li><span class="res-n">02</span><span class="res-code">2</span><span class="res-one">2</span></li>
+                  <li><span class="res-n">03</span><span class="res-code">3</span><span class="res-one">3</span></li>
+                  <li><span class="res-n">04</span><span class="res-code">4</span><span class="res-one">4</span></li>
+                  <li><span class="res-n">05</span><span class="res-code">5</span><span class="res-one">5</span></li>
+                  <li><span class="res-n">06</span><span class="res-code">6</span><span class="res-one">6</span></li>
+                  <li><span class="res-n">07</span><span class="res-code">End</span><span class="res-one">7</span></li>
+                </ol>
+                <p class="residue-key" data-md-skip><span>Bead to free end</span><span>Named TB500 (17–23 Fragment)</span><span>No residue letters</span></p>
+              </div>
             </div>
 
             <div class="chain-slide" role="tabpanel" id="chain-panel-ghk" aria-labelledby="chain-tab-ghk" hidden>

@@ -148,6 +148,72 @@ function initChainFilms(): void {
   })
 }
 
+type Bead = [number, string, string]
+
+function initBeadFilm(
+  selector: string,
+  listSelector: string,
+  order: Bead[],
+  knots: [number, number][],
+  fromLeft: boolean,
+): void {
+  const total = order.length
+  const countAt = (t: number) => {
+    for (let i = 1; i < knots.length; i++) {
+      const [t1, n1] = knots[i]
+      const [t0, n0] = knots[i - 1]
+      if (t <= t1) return Math.floor(n0 + ((t - t0) / (t1 - t0)) * (n1 - n0))
+    }
+    return total
+  }
+
+  document.querySelectorAll<HTMLVideoElement>(selector).forEach((video) => {
+    const frame = video.parentElement
+    const label = frame?.querySelector<HTMLElement>(".join-label")
+    const list = video.closest(".chain-slide")?.querySelector<HTMLOListElement>(listSelector)
+    const items = list ? Array.from(list.querySelectorAll<HTMLLIElement>("li")) : []
+    let shown = -1
+
+    const render = () => {
+      const active = !video.paused || video.currentTime > 0.05
+      const count = Math.max(0, Math.min(total, countAt(video.currentTime)))
+      label?.classList.toggle("is-on", active && count > 0)
+      list?.classList.toggle("is-tracking", active && !video.ended && count > 0)
+      if (!active || count === 0) {
+        if (shown !== -1) {
+          shown = -1
+          label?.replaceChildren()
+          items.forEach((li) => li.classList.remove("is-joined", "is-new"))
+        }
+        return
+      }
+      if (count === shown) return
+      shown = count
+      const [pos, code, name] = order[count - 1]
+      label?.classList.toggle("is-pro", code === "Pro")
+      if (label) {
+        label.replaceChildren()
+        const index = document.createElement("span")
+        index.className = "join-label-n"
+        index.textContent = `${String(count).padStart(2, "0")} / ${String(total).padStart(2, "0")}`
+        const text = document.createElement("span")
+        text.textContent = `${code} · ${name}`
+        label.append(index, text)
+      }
+      items.forEach((li, i) => {
+        const position = i + 1
+        const joined = fromLeft ? position <= count : position >= total + 1 - count
+        li.classList.toggle("is-joined", joined)
+        li.classList.toggle("is-new", position === pos)
+      })
+    }
+
+    ;["loadedmetadata", "timeupdate", "play", "pause", "seeked", "ended"].forEach((ev) =>
+      video.addEventListener(ev, render),
+    )
+  })
+}
+
 function initChainShow(): void {
   document.querySelectorAll<HTMLElement>("[data-chain-show]").forEach((root) => {
     const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[role="tab"]'))
@@ -342,5 +408,42 @@ initReveal()
 initChainShow()
 initChainFilms()
 initGhkFilm()
+initBeadFilm(
+  "video[data-kpv]",
+  ".residues--kpv",
+  [
+    [1, "Lys", "Lysine"],
+    [2, "Pro", "Proline"],
+    [3, "Val", "Valine"],
+  ],
+  [
+    [0, 0],
+    [15.042, 1],
+    [30.083, 2],
+    [56.1, 3],
+  ],
+  true,
+)
+initBeadFilm(
+  "video[data-tb]",
+  ".residues--seven",
+  [
+    [1, "1", "On the bead"],
+    [2, "2", "Sphere"],
+    [3, "3", "Sphere"],
+    [4, "4", "Sphere"],
+    [5, "5", "Sphere"],
+    [6, "6", "Sphere"],
+    [7, "7", "Free end"],
+  ],
+  [
+    [0, 0],
+    [15.042, 2],
+    [30.083, 4],
+    [45.125, 6],
+    [56, 7],
+  ],
+  true,
+)
 initAmbientFilms()
 initStories()
