@@ -1,0 +1,20 @@
+{
+  "name": "klowpens",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "cf deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-beta.v.0",
+    "@types/turndown": "^5.0.6",
+    "cf": "^1.0.0-beta.32",
+    "turndown": "^7.2.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  }
+}

@@ -1,0 +1,71 @@
+# klowpens.com welcomes search engines and AI answer engines.
+# search=yes: a search index may quote and link.
+# ai-input=yes: an answer engine may read a page to answer a question.
+# ai-train=no: the pages may not be used to train or fine-tune a model.
+# The signal is repeated in every group because a named bot reads only its own group.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Googlebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Bingbot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: DuckAssistBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: MistralAI-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+Sitemap: https://klowpens.com/sitemap.xml
