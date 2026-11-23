@@ -18,6 +18,20 @@ export const pages = [
 	"bpc-157-research",
 	"faq",
 	"about",
+	"lab-notes",
+	"lab-notes/2026-11-16-liver-drug-data-and-the-glow-pen",
+	"lab-notes/2026-11-09-retatrutide-knee-data",
+	"lab-notes/2026-11-02-hhs-peptide-compounding-policy",
+	"lab-notes/2026-10-26-peptide-compounding-petition",
+	"lab-notes/2026-10-19-interim-peptide-access-policy",
+	"lab-notes/2026-10-12-possible-opening-for-peptides-in-washington",
+	"lab-notes/2026-10-05-retatrutide-phase-3-papers",
+	"lab-notes/2026-09-28-import-alert-and-empower",
+	"lab-notes/2026-09-21-enforcement-and-demand",
+	"lab-notes/2026-09-14-quiet-week",
+	"lab-notes/2026-09-11-fda-warning-letters",
+	"lab-notes/2026-08-31-pcac-follow-ups",
+	"lab-notes/2026-08-28-fda-compounding-next-steps",
 ];
 
 function pagePath(file: string): string {
@@ -40,10 +54,19 @@ function site(): Plugin {
 				for (let i = 0; i < 3; i++) {
 					out = out.replace(/<!--@include ([\w-]+)-->/g, (_, name: string) => partial(name));
 				}
-				return out.replace(
+				out = out.replace(
 					new RegExp(`(<a[^>]*data-nav[^>]*href="${path}")`, "g"),
 					'$1 aria-current="page"',
 				);
+				// The shared head allows indexing. The 404 page adds noindex;
+				// drop the index tag so crawlers do not see both.
+				if (ctx.filename.endsWith("404.html")) {
+					out = out.replace(
+						/\s*<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" \/>/,
+						"",
+					);
+				}
+				return out;
 			},
 		},
 		generateBundle: {

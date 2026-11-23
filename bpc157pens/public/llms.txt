@@ -31,15 +31,34 @@ Each page also has a Markdown copy at the same path plus index.md.
 - [Testing and COAs](https://bpc157pens.com/bpc-157-testing-coa/): What a certificate of analysis should show, and supplier red flags. [Markdown](https://bpc157pens.com/bpc-157-testing-coa/index.md)
 - [U.S. legal status](https://bpc157pens.com/bpc-157-legal-status/): FDA timeline, WADA and DoD status, and what research use only means. [Markdown](https://bpc157pens.com/bpc-157-legal-status/index.md)
 - [Research: 20 studies](https://bpc157pens.com/bpc-157-research/): Twenty peer-reviewed BPC-157 papers chosen from thirty, each with the authors and a plain-language note. Ten further papers are listed and explained as set aside. [Markdown](https://bpc157pens.com/bpc-157-research/index.md)
-- [FAQ](https://bpc157pens.com/faq/): Thirteen short, sourced answers. [Markdown](https://bpc157pens.com/faq/index.md)
+- [FAQ](https://bpc157pens.com/faq/): Thirteen sourced answers. Standard pens and vials ship already in solution. [Markdown](https://bpc157pens.com/faq/index.md)
 - [About](https://bpc157pens.com/about/): Ownership, editorial policy and corrections. [Markdown](https://bpc157pens.com/about/index.md)
+
+## Lab Notes
+
+The Palm Beach Vitality weekly research notes, posted in full. One page each, listed by month and date. No images.
+
+- [Lab Notes](https://bpc157pens.com/lab-notes/): Index, newest first. [Markdown](https://bpc157pens.com/lab-notes/index.md)
+- [November 16, 2026: Liver-drug data and the GLOW pen](https://bpc157pens.com/lab-notes/2026-11-16-liver-drug-data-and-the-glow-pen/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-16-liver-drug-data-and-the-glow-pen/index.md)
+- [November 9, 2026: Retatrutide knee data and a semaglutide heart study](https://bpc157pens.com/lab-notes/2026-11-09-retatrutide-knee-data/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-09-retatrutide-knee-data/index.md)
+- [November 2, 2026: HHS peptide compounding policy](https://bpc157pens.com/lab-notes/2026-11-02-hhs-peptide-compounding-policy/) [Markdown](https://bpc157pens.com/lab-notes/2026-11-02-hhs-peptide-compounding-policy/index.md)
+- [October 26, 2026: Peptide compounding petition](https://bpc157pens.com/lab-notes/2026-10-26-peptide-compounding-petition/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-26-peptide-compounding-petition/index.md)
+- [October 19, 2026: Interim peptide access policy](https://bpc157pens.com/lab-notes/2026-10-19-interim-peptide-access-policy/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-19-interim-peptide-access-policy/index.md)
+- [October 12, 2026: A possible opening for peptides in Washington](https://bpc157pens.com/lab-notes/2026-10-12-possible-opening-for-peptides-in-washington/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-12-possible-opening-for-peptides-in-washington/index.md)
+- [October 5, 2026: Retatrutide phase 3 papers](https://bpc157pens.com/lab-notes/2026-10-05-retatrutide-phase-3-papers/) [Markdown](https://bpc157pens.com/lab-notes/2026-10-05-retatrutide-phase-3-papers/index.md)
+- [September 28, 2026: Import alert and Empower](https://bpc157pens.com/lab-notes/2026-09-28-import-alert-and-empower/) [Markdown](https://bpc157pens.com/lab-notes/2026-09-28-import-alert-and-empower/index.md)
+- [September 21, 2026: Enforcement and demand](https://bpc157pens.com/lab-notes/2026-09-21-enforcement-and-demand/) [Markdown](https://bpc157pens.com/lab-notes/2026-09-21-enforcement-and-demand/index.md)
+- [September 14, 2026: Quiet week](https://bpc157pens.com/lab-notes/2026-09-14-quiet-week/) [Markdown](https://bpc157pens.com/lab-notes/2026-09-14-quiet-week/index.md)
+- [September 11, 2026: FDA warning letters](https://bpc157pens.com/lab-notes/2026-09-11-fda-warning-letters/) [Markdown](https://bpc157pens.com/lab-notes/2026-09-11-fda-warning-letters/index.md)
+- [August 31, 2026: PCAC follow-ups](https://bpc157pens.com/lab-notes/2026-08-31-pcac-follow-ups/) [Markdown](https://bpc157pens.com/lab-notes/2026-08-31-pcac-follow-ups/index.md)
+- [August 28, 2026: FDA compounding next steps](https://bpc157pens.com/lab-notes/2026-08-28-fda-compounding-next-steps/) [Markdown](https://bpc157pens.com/lab-notes/2026-08-28-fda-compounding-next-steps/index.md)
 
 ## Products referenced
 
-- [BPC-157 10mg Pen](https://palmbeach-vitality.store/product/bpc-157-10mg-pen/): 10 mg in a 3 mL pre-filled pen.
-- [BPC-157 20mg Pen](https://palmbeach-vitality.store/product/bpc-157-20mg-pen/): 20 mg in a 3 mL pre-filled pen.
-- [BPC-157 10mg Vial](https://palmbeach-vitality.store/product/bpc-157-10mg-vial/): 10 mg in a 10 mL liquid vial.
-- [BPC-157 20mg Vial](https://palmbeach-vitality.store/product/bpc-157-20mg/): 20 mg in a 10 mL liquid vial.
+- [BPC-157 10mg Pen](https://palmbeach-vitality.store/product/bpc-157-10mg-pen/?utm_source=bpc157pens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_10mg): 10 mg in a 3 mL pre-filled pen.
+- [BPC-157 20mg Pen](https://palmbeach-vitality.store/product/bpc-157-20mg-pen/?utm_source=bpc157pens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_20mg): 20 mg in a 3 mL pre-filled pen.
+- [BPC-157 10mg Vial](https://palmbeach-vitality.store/product/bpc-157-10mg-vial/?utm_source=bpc157pens&utm_medium=referral&utm_campaign=site&utm_content=llms_vial_10mg): 10 mg in a 10 mL liquid vial.
+- [BPC-157 20mg Vial](https://palmbeach-vitality.store/product/bpc-157-20mg/?utm_source=bpc157pens&utm_medium=referral&utm_campaign=site&utm_content=llms_vial_20mg): 20 mg in a 10 mL liquid vial.
 
 ## Key sources
 
