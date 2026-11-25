@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NADPENS · Marrow</title>
+  <meta name="description" content="#e3d5c8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --paper: #f4efe6;
+      --paper-2: #ebe4d8;
+      --card: #fffdf8;
+      --ink: #241316;
+      --ink-2: #3d2a2e;
+      --mute: #6e5c58;
+      --line: #e3d5c8;
+      --accent: #8e2438;
+      --accent-ink: #fff8f6;
+      --soft: #f6e4e7;
+      --spark: #8e2438;
+      --display: "Fraunces", Georgia, serif;
+      --sans: "Source Sans 3", sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, monospace;
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 18px/1.6 var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: var(--accent); }
+    h1, h2, h3 { font-family: var(--display); font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 0.4em; }
+    h1 { font-size: clamp(3rem, 6vw, 5.4rem); font-weight: 500; }
+    h2 { font-size: clamp(2rem, 4vw, 3.3rem); }
+    h3 { font-size: 1.35rem; }
+    p { margin: 0 0 0.8em; }
+    .wrap { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+    .ruo { background: var(--ink); color: var(--paper); text-align: center; font: 500 12px/1.3 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
+    .ruo p { margin: 0; padding: 10px 16px; }
+    .site-header { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    .header-inner, .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 74px; }
+    .logo { font-family: var(--display); font-size: 22px; letter-spacing: 0.08em; text-decoration: none; color: var(--ink); }
+    .logo span { color: var(--accent); }
+    nav { display: flex; gap: 18px; font-size: 15px; }
+    nav a { color: var(--ink); text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: 64px 0 28px; }
+    .eyebrow { font: 500 12px/1.3 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+    .lede { font-size: 1.15rem; max-width: 62ch; color: var(--ink-2); }
+    .byline, .fine, figcaption { color: var(--mute); font-size: 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 18px 0 0; list-style: none; }
+    .chips li { border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 12px; font: 500 12px/1.2 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+    .hero-fig img { width: auto; margin-inline: auto; object-fit: contain; }
+    figcaption { padding: 10px 4px 16px; }
+    
+    .hero { display: block; max-width: 980px; }
+    .hero h1 { font-size: clamp(3.4rem, 7vw, 6.4rem); font-weight: 460; }
+    .hero-fig { margin-top: 28px; background: transparent; }
+    .hero-fig img { height: 460px; margin-inline: auto; }
+        
+    .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; padding-bottom: 28px; }
+    .stats article { border-top: 1px solid var(--line); padding-top: 12px; }
+    .stats p { margin: 0; color: var(--mute); font: 500 11px/1.3 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; }
+    .stats strong { display: block; margin-top: 6px; font-family: var(--display); font-size: 1.15rem; font-weight: 500; letter-spacing: -0.02em; }
+    .disclosure { background: var(--soft); border-radius: var(--radius); padding: 18px 20px; margin: 8px auto 10px; }
+    .disclosure p { margin: 0; }
+    section.wrap { padding: 64px 0; }
+    .section-lead { max-width: 68ch; color: var(--ink-2); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 8px 0 28px; }
+    .cards:last-child { grid-template-columns: repeat(2, 1fr); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+    .shot { background: #f5f5f3; display: grid; place-items: center; min-height: 280px; }
+    .shot img { height: 250px; width: auto; }
+    .card-body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .card dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0; }
+    .card dt { color: var(--mute); font: 500 11px/1.2 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; }
+    .card dd { margin: 2px 0 0; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+    .price { font-family: var(--display); font-size: 1.6rem; margin: 4px 0; }
+    .btn { display: inline-block; margin-top: auto; background: var(--accent); color: var(--accent-ink); text-decoration: none; text-align: center; padding: 12px 14px; border-radius: var(--radius); font-weight: 600; }
+    .bridge { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; padding: 0; margin: 28px 0; list-style: none; counter-reset: part; }
+    .bridge li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); min-height: 110px; padding: 14px; display: flex; align-items: flex-end; font-family: var(--display); font-size: 1.15rem; }
+    .bridge li::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); margin-bottom: auto; flex: none; }
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; margin: 0; }
+    .facts div { border-top: 1px solid var(--line); padding-top: 10px; }
+    .facts dt { color: var(--mute); font: 500 11px/1.2 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; }
+    .facts dd { margin: 4px 0 0; }
+    .step-list, .status-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding: 0; margin: 20px 0 0; list-style: none; }
+    .step-list li, .status-list li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+    .step-list span, .status-list span { display: block; color: var(--accent); font: 500 12px/1 var(--mono); letter-spacing: 0.08em; margin-bottom: 8px; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+    table { width: 100%; border-collapse: collapse; background: var(--card); }
+    th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    thead th { font: 500 12px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); }
+    .map { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0; margin: 18px 0 0; list-style: none; }
+    .map li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 16px; background: var(--card); border-radius: var(--radius); border: 1px solid var(--line); }
+    .map span { color: var(--mute); text-align: right; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    summary { cursor: pointer; font-family: var(--display); font-size: 1.35rem; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 48px; }
+    .footer-inner { align-items: flex-start; }
+    .footer-inner p { max-width: 52ch; color: var(--mute); }
+    .swatches { display: flex; flex-wrap: wrap; gap: 8px; padding-bottom: 40px; }
+    .swatch { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 10px 6px 6px; font: 500 12px/1 var(--mono); }
+    .swatch i { width: 28px; height: 28px; border-radius: 50%; display: block; border: 1px solid var(--line); }
+    @media (max-width: 980px) {
+      .hero, .stats, .cards, .cards:last-child, .bridge, .facts, .step-list, .status-list, .map, .header-inner { display: block; }
+      nav { display: none; }
+      .hero-fig { margin-right: 0; border-radius: var(--radius); }
+      .stats article, .map li { margin-bottom: 12px; }
+    }
+    
+  </style>
+</head>
+<body class="marrow">
+
+    <div class="ruo"><p>Research use only · Not for human or veterinary use · Not an approved drug</p></div>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="#top">NAD<span>PENS</span></a>
+        <nav>
+          <a href="#formats">Formats</a>
+          <a href="#compound">What NAD+ is</a>
+          <a href="#compare">Pen vs vial</a>
+          <a href="#map">Site map</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Research guide · November 25, 2026</p>
+          <h1>NAD+, in pen and vial.</h1>
+          <p class="lede">NAD+ is nicotinamide adenine dinucleotide, the oxidized form of a dinucleotide coenzyme. It is not a peptide chain. Palm Beach Vitality sells it for laboratory research use only, as a 3 mL pen and a 10 mL vial. This page covers the formats, what the compound is, and how the seller says to store it.</p>
+          <p class="byline">By the nadpens.com Editorial Team · Specs checked November 25, 2026</p>
+          <ul class="chips">
+            <li>Pen · 3 mL</li>
+            <li>Vial · 10 mL</li>
+            <li>Research use only</li>
+          </ul>
+        </div>
+        <figure class="hero-fig">
+          <img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/832-nad-1000mg-pen.png" alt="NAD+ 1000 mg research pen, 3 mL, on a plain ground.">
+          <figcaption>NAD+ 1000 mg pen. The 500 mg and 1600 mg pens use the same 3 mL cartridge size.</figcaption>
+        </figure>
+      </section>
+
+      <section class="stats wrap" aria-label="At a glance">
+        <article><p>FDA approval</p><strong>None for this product</strong></article>
+        <article><p>Compound</p><strong>Dinucleotide coenzyme</strong></article>
+        <article><p>Not</p><strong>A peptide chain</strong></article>
+        <article><p>Formats</p><strong>3 mL pen · 10 mL vial</strong></article>
+        <article><p>Pen shelf life</p><strong>4–6 weeks, cold</strong></article>
+        <article><p>Vial shelf life</p><strong>16–20 weeks, cold</strong></article>
+      </section>
+
+      <aside class="disclosure wrap">
+        <p><strong>Disclosure.</strong> nadpens.com would be owned by the same company as Palm Beach Vitality. Product links go to Palm Beach Vitality, and the company benefits when you buy there. Prices and specifications below are the seller’s, checked November 25, 2026.</p>
+      </aside>
+
+      <section class="formats wrap" id="formats">
+        <p class="eyebrow">01 · Formats</p>
+        <h2>Two ready-to-use formats.</h2>
+        <p class="section-lead">Every pen and vial below ships with NAD+ already in aqueous solution. A pen keeps it in a 3 mL cartridge. A vial holds 10 mL and is drawn with separate lab tools. Neither listing says reconstitution is required.</p>
+        <h3>Pre-filled pens</h3>
+        <div class="cards">
+            <article class="card">
+              <div class="shot"><img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/208-nad-pen-500mg.png" alt="NAD+ 500 mg Pen"></div>
+              <div class="card-body">
+                <h3>NAD+ 500 mg Pen</h3>
+                <dl>
+                  <div><dt>Total</dt><dd>500 mg</dd></div>
+                  <div><dt>Volume</dt><dd>3 mL</dd></div>
+                  <div><dt>Conc.</dt><dd>≈166.7 mg/mL</dd></div>
+                </dl>
+                <p class="price">$120</p>
+                <a class="btn" href="https://palmbeach-vitality.store/product/nad-pen-500mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=palette&utm_content=pen-500">View at Palm Beach Vitality</a>
+                <p class="fine">Research use only · Price checked November 25, 2026</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="shot"><img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/832-nad-1000mg-pen.png" alt="NAD+ 1000 mg Pen"></div>
+              <div class="card-body">
+                <h3>NAD+ 1000 mg Pen</h3>
+                <dl>
+                  <div><dt>Total</dt><dd>1000 mg</dd></div>
+                  <div><dt>Volume</dt><dd>3 mL</dd></div>
+                  <div><dt>Conc.</dt><dd>≈333.33 mg/mL</dd></div>
+                </dl>
+                <p class="price">$128</p>
+                <a class="btn" href="https://palmbeach-vitality.store/product/nad-1000mg-pen/?utm_source=nadpens&utm_medium=referral&utm_campaign=palette&utm_content=pen-1000">View at Palm Beach Vitality</a>
+                <p class="fine">Research use only · Price checked November 25, 2026</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="shot"><img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/833-nad-1600mg-pen.png" alt="NAD+ 1600 mg Pen"></div>
+              <div class="card-body">
+                <h3>NAD+ 1600 mg Pen</h3>
+                <dl>
+                  <div><dt>Total</dt><dd>1600 mg</dd></div>
+                  <div><dt>Volume</dt><dd>3 mL</dd></div>
+                  <div><dt>Conc.</dt><dd>≈533.33 mg/mL</dd></div>
+                </dl>
+                <p class="price">$200</p>
+                <a class="btn" href="https://palmbeach-vitality.store/product/nad-1600mg-pen/?utm_source=nadpens&utm_medium=referral&utm_campaign=palette&utm_content=pen-1600">View at Palm Beach Vitality</a>
+                <p class="fine">Research use only · Price checked November 25, 2026</p>
+              </div>
+            </article></div>
+        <h3>Liquid vials</h3>
+        <div class="cards">
+            <article class="card">
+              <div class="shot"><img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/206-nad-500mg-vial.png" alt="NAD+ 500 mg Vial"></div>
+              <div class="card-body">
+                <h3>NAD+ 500 mg Vial</h3>
+                <dl>
+                  <div><dt>Total</dt><dd>500 mg</dd></div>
+                  <div><dt>Volume</dt><dd>10 mL</dd></div>
+                  <div><dt>Conc.</dt><dd>50 mg/mL</dd></div>
+                </dl>
+                <p class="price">$90</p>
+                <a class="btn" href="https://palmbeach-vitality.store/product/nad-500mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=palette&utm_content=vial-500">View at Palm Beach Vitality</a>
+                <p class="fine">Research use only · Price checked November 25, 2026</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="shot"><img src="https://palmbeach-vitality.store/wp-content/uploads/2026/09/189-nad-1000mg-vial.png" alt="NAD+ 1000 mg Vial"></div>
+              <div class="card-body">
+                <h3>NAD+ 1000 mg Vial</h3>
+                <dl>
+                  <div><dt>Total</dt><dd>1000 mg</dd></div>
+                  <div><dt>Volume</dt><dd>10 mL</dd></div>
+                  <div><dt>Conc.</dt><dd>100 mg/mL</dd></div>
+                </dl>
+                <p class="price">$102</p>
+                <a class="btn" href="https://palmbeach-vitality.store/product/nad-1000mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=palette&utm_content=vial-1000">View at Palm Beach Vitality</a>
+                <p class="fine">Research use only · Price checked November 25, 2026</p>
+              </div>
+            </article></div>
+      </section>
+
+      <section class="compound wrap" id="compound">
+        <p class="eyebrow">02 · The compound</p>
+        <h2>A dinucleotide, not a peptide chain.</h2>
+        <p class="section-lead">NAD+ is nicotinamide joined to adenine through two ribose sugars and a pyrophosphate bridge. The seller lists the vial as an acetate salt, already dissolved. Laboratories use NAD+ as a redox cofactor stock. This page does not turn that into a human result, and it does not give a dose.</p>
+        <ol class="bridge" aria-label="NAD+ parts, in order">
+          <li>Nicotinamide</li>
+          <li>Ribose</li>
+          <li>Phosphate</li>
+          <li>Phosphate</li>
+          <li>Ribose</li>
+          <li>Adenine</li>
+        </ol>
+        <dl class="facts">
+          <div><dt>Name</dt><dd>NAD+, nicotinamide adenine dinucleotide, oxidized form</dd></div>
+          <div><dt>Listed salt</dt><dd>Acetate, on the vial pages</dd></div>
+          <div><dt>Appearance</dt><dd>Clear to slightly opalescent liquid</dd></div>
+          <div><dt>Reconstitution</dt><dd>None. Already in solution.</dd></div>
+        </dl>
+      </section>
+
+      <section class="steps wrap" id="handling">
+        <p class="eyebrow">03 · What is documented</p>
+        <h2>From the seller’s listing, not a factory tour.</h2>
+        <ol class="step-list">
+          <li><span>01</span><h3>The compound</h3><p>NAD+, oxidized form. The vial pages name an acetate salt.</p></li>
+          <li><span>02</span><h3>Already liquid</h3><p>Pens and vials ship in aqueous solution. No mixing step is listed.</p></li>
+          <li><span>03</span><h3>Two volumes</h3><p>Pens are 3 mL. Vials are 10 mL. Totals differ by SKU.</p></li>
+          <li><span>04</span><h3>Cold storage</h3><p>Refrigerate at 2–8 °C (36–46 °F). Do not freeze. Protect from light.</p></li>
+          <li><span>05</span><h3>Shelf life</h3><p>The seller’s practical figure is 4–6 weeks for a pen and 16–20 weeks for a vial.</p></li>
+          <li><span>06</span><h3>Documentation</h3><p>A certificate of analysis is available on request. Pens are labeled with a lot reference.</p></li>
+        </ol>
+      </section>
+
+      <section class="compare wrap" id="compare">
+        <p class="eyebrow">04 · Pen or vial</p>
+        <h2>Same idea, different volume.</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Pen</th><th>Liquid vial</th></tr></thead>
+            <tbody>
+              <tr><th>Volume</th><td>3 mL</td><td>10 mL</td></tr>
+              <tr><th>Strengths listed</th><td>500, 1000, 1600 mg</td><td>500 and 1000 mg</td></tr>
+              <tr><th>Handling</th><td>Sealed cartridge, built-in dial</td><td>Drawn with separate lab tools</td></tr>
+              <tr><th>Listed shelf life</th><td>4–6 weeks</td><td>16–20 weeks</td></tr>
+              <tr><th>Reconstitution</th><td>Not required</td><td>Not required</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fine">The dial and the click count are format specifications on the seller’s pen pages. This template does not turn them into instructions for use.</p>
+      </section>
+
+      <section class="sitemap wrap" id="map">
+        <p class="eyebrow">05 · Site map</p>
+        <h2>The same page set as the other pen sites.</h2>
+        <ul class="map">
+          <li><strong>Home</strong><span>Formats, compound, storage, disclosure</span></li>
+          <li><strong>What NAD+ is</strong><span>Dinucleotide identity, not a peptide</span></li>
+          <li><strong>Pen vs vial</strong><span>3 mL cartridge against the 10 mL vial</span></li>
+          <li><strong>Storage</strong><span>2–8 °C, no freeze, light protection</span></li>
+          <li><strong>Testing and COA</strong><span>Certificate on request</span></li>
+          <li><strong>FAQ</strong><span>Short answers, no dosing</span></li>
+          <li><strong>About</strong><span>Who writes the site, and who owns it</span></li>
+        </ul>
+      </section>
+
+      <section class="status wrap" id="status">
+        <p class="eyebrow">06 · Status</p>
+        <h2>Sold for the lab, not as an approved drug.</h2>
+        <ol class="status-list">
+          <li><span>The label</span><p>Palm Beach Vitality sells these pens and vials for laboratory research use only. That label is not an FDA approval.</p></li>
+          <li><span>This page</span><p>It does not give a dose, a click count for use, or a claim about human energy, aging, or recovery.</p></li>
+          <li><span>The record</span><p>A research page, when it is written, would cite papers the way bpc157pens.com and klowpens.com cite theirs. This template does not invent that bibliography.</p></li>
+        </ol>
+      </section>
+
+      <section class="faq wrap" id="faq">
+        <p class="eyebrow">07 · Questions</p>
+        <h2>Common questions.</h2>
+        <details open>
+          <summary>Is this NAD+ pen an FDA-approved drug?</summary>
+          <p>No. It is sold for laboratory research use only. The research-use label is not an approval.</p>
+        </details>
+        <details>
+          <summary>Does the pen or the vial need reconstitution?</summary>
+          <p>No. The seller lists both as ready-to-use aqueous solution.</p>
+        </details>
+        <details>
+          <summary>How should they be stored?</summary>
+          <p>Refrigerate at 2–8 °C (36–46 °F), protect from light, and do not freeze. The seller’s practical shelf life is 4–6 weeks for a pen and 16–20 weeks for a vial.</p>
+        </details>
+        <details>
+          <summary>Why is there no dosing on this page?</summary>
+          <p>The products are sold for laboratory research only. Dosing would be guidance this site does not give.</p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <p class="logo">NAD<span>PENS</span></p>
+        <p>Research material only. Not for human or veterinary use. nadpens.com and Palm Beach Vitality would be the same company.</p>
+        <p><a href="mailto:info@palmbeach-vitality.com">info@palmbeach-vitality.com</a></p>
+      </div>
+    </footer>
+
+<section class="wrap swatches" aria-label="Palette"><span class="swatch"><i style="background:#f4efe6"></i>Paper #f4efe6</span><span class="swatch"><i style="background:#fffdf8"></i>Card #fffdf8</span><span class="swatch"><i style="background:#241316"></i>Ink #241316</span><span class="swatch"><i style="background:#6e5c58"></i>Mute #6e5c58</span><span class="swatch"><i style="background:#8e2438"></i>Accent #8e2438</span><span class="swatch"><i style="background:#f6e4e7"></i>Soft #f6e4e7</span></section>
+</body>
+</html>
