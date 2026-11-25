@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NADPENS · four palette templates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #ece7df; color: #221c16; font: 400 18px/1.5 Outfit, sans-serif; }
+    .wrap { width: min(1280px, calc(100% - 40px)); margin: 0 auto; padding: 48px 0 72px; }
+    h1 { font: 560 64px/0.95 Fraunces, serif; letter-spacing: -0.04em; margin: 0 0 12px; }
+    .intro { max-width: 68ch; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 28px; }
+    .preview { display: block; background: #fffdf9; color: inherit; text-decoration: none; border-radius: 18px; overflow: hidden; box-shadow: 0 18px 40px -28px rgba(30,20,10,.5); }
+    .frame { height: 390px; overflow: hidden; background: #ddd; }
+    iframe { width: 1440px; height: 920px; border: 0; transform: scale(0.43); transform-origin: top left; pointer-events: none; }
+    .meta { padding: 16px 18px 18px; }
+    h2 { font: 560 32px/1 Fraunces, serif; margin: 0 0 6px; }
+    .meta p { margin: 0 0 10px; }
+    .dots i { display: inline-block; width: 22px; height: 22px; border-radius: 50%; margin-right: 6px; border: 1px solid rgba(0,0,0,.15); }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 42px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p>nadpens.com · four templates</p>
+    <h1>Pick a palette.</h1>
+    <p class="intro">Each file is a full homepage: research-use bar, navigation, hero, product photography, pen and vial specs, the dinucleotide diagram, storage, the pen-versus-vial table, the site map, status, and FAQ. Filament, Marrow, Iris, and Clay stay off the bpc157pens aqua-and-gold system and off the klowpens navy-and-copper system. Specs are Palm Beach Vitality’s, checked November 25, 2026.</p>
+    <div class="grid">
+      
+            <a class="preview" href="filament.html">
+              <div class="frame"><iframe src="filament.html" title="Filament preview" tabindex="-1"></iframe></div>
+              <div class="meta">
+                <h2>Filament</h2>
+                <p>#2c3826</p>
+                <div class="dots"><i style="background:#10140e" title="paper"></i> <i style="background:#1c2318" title="card"></i> <i style="background:#f3f6ea" title="ink"></i> <i style="background:#d6ff3c" title="accent"></i> <i style="background:#242c1c" title="soft"></i></div>
+              </div>
+            </a>
+            <a class="preview" href="marrow.html">
+              <div class="frame"><iframe src="marrow.html" title="Marrow preview" tabindex="-1"></iframe></div>
+              <div class="meta">
+                <h2>Marrow</h2>
+                <p>#e3d5c8</p>
+                <div class="dots"><i style="background:#f4efe6" title="paper"></i> <i style="background:#fffdf8" title="card"></i> <i style="background:#241316" title="ink"></i> <i style="background:#8e2438" title="accent"></i> <i style="background:#f6e4e7" title="soft"></i></div>
+              </div>
+            </a>
+            <a class="preview" href="iris.html">
+              <div class="frame"><iframe src="iris.html" title="Iris preview" tabindex="-1"></iframe></div>
+              <div class="meta">
+                <h2>Iris</h2>
+                <p>#3a2c52</p>
+                <div class="dots"><i style="background:#120c18" title="paper"></i> <i style="background:#221830" title="card"></i> <i style="background:#f6f1ff" title="ink"></i> <i style="background:#d7b8ff" title="accent"></i> <i style="background:#2a1c40" title="soft"></i></div>
+              </div>
+            </a>
+            <a class="preview" href="clay.html">
+              <div class="frame"><iframe src="clay.html" title="Clay preview" tabindex="-1"></iframe></div>
+              <div class="meta">
+                <h2>Clay</h2>
+                <p>#e2cbb6</p>
+                <div class="dots"><i style="background:#f3e2d0" title="paper"></i> <i style="background:#fff6ec" title="card"></i> <i style="background:#2a1d16" title="ink"></i> <i style="background:#5b2e86" title="accent"></i> <i style="background:#efe0f4" title="soft"></i></div>
+              </div>
+            </a>
+    </div>
+  </div>
+</body>
+</html>
