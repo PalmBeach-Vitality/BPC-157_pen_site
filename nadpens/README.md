@@ -12,3 +12,5 @@ The palettes are not the bpc157pens aqua, gold, and coral system, and they are n
 | Clay | Clay `#f3e2d0` | Imperial purple `#5b2e86` |
 
 Open `templates/index.html` to compare them. Specs and product photographs are Palm Beach Vitality’s, checked November 25, 2026. The Vite and Cloudflare site, matching the other pen sites, follows once a palette is chosen.
+
+There are no separate How It’s Made or What It Is pages yet. Each homepage template carries both as sections, just above the site map: `#what-it-is` embeds the official Sony Classical player for Yo-Yo Ma’s Bach Cello Suite No. 3 Prélude (`zp1tWOm0q4I`), and `#how-its-made` embeds the official WGBH player for the Suite No. 5 Gavottes (`W124_mqwSdc`). Credits sit beside each player. The audio is not downloaded.
