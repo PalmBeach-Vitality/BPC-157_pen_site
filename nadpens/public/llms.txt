@@ -1,0 +1,50 @@
+# nadpens.com
+
+> Research education about NAD+ pens and vials sold by Palm Beach Vitality. NAD+ here is nicotinamide adenine dinucleotide, a dinucleotide coenzyme, not a peptide. Prices and specifications are the seller's, checked November 25, 2026. This page does not state an FDA approval status or a WADA status for NAD+.
+
+Key facts:
+
+- PubChem CID 5892 lists nadide, formula C21H27N7O14P2, molecular weight 663.4 g/mol. Its synonyms include nicotinamide adenine dinucleotide, NAD+, and CAS 53-84-9.
+- Palm Beach Vitality sells three pre-filled 3 mL pens and two 10 mL liquid vials. The pens are NAD+ 1600mg Pen ($200, about 533.33 mg/mL), NAD+ 1000mg Pen ($128, about 333.33 mg/mL), and NAD+ Pen 500mg ($120, about 166.7 mg/mL).
+- The vials are NAD+ 1000mg Vial ($102, 100 mg/mL) and NAD+ 500mg Vial ($90, 50 mg/mL).
+- The seller says the standard pens and vials ship already in aqueous solution and need no reconstitution. Freeze-dried NAD+ is offered by contacting the seller, and a minimum order applies.
+- Each pen page lists 300 clicks and 0.01 mL per click as format specifications. This site does not give instructions for use.
+- Storage per the seller: refrigerate, protect from light, do not freeze. Pens list 2–8 °C (36–46 °F) and a practical shelf life of 4–6 weeks. Vials list 36–46 °F and a practical shelf life of 16–20 weeks.
+- Products are sold for laboratory research use only. Lot-specific COAs are available on request, according to the seller. This site does not publish a certificate.
+- nadpens.com does not provide dosing or usage instructions.
+- Two papers are named on the research page so their authors are credited. The site does not restate their conclusions or treat the authors as endorsers.
+
+Disclosure: nadpens.com is owned by the same company as Palm Beach Vitality (palmbeach-vitality.store), the store it links to.
+
+## Guides
+
+- [Home: NAD+ in pen and vial](https://nadpens.com/): Identity, the five products, pen versus vial, and storage as the seller states it. [Markdown](https://nadpens.com/index.md)
+- [What is NAD+](https://nadpens.com/what-is-nad/): PubChem CID 5892. Not described as a peptide. [Markdown](https://nadpens.com/what-is-nad/index.md)
+- [How it's supplied](https://nadpens.com/how-nad-is-made/): The five products ship in solution. No synthesis recipe and no reconstitution guide. [Markdown](https://nadpens.com/how-nad-is-made/index.md)
+- [Pen vs vial](https://nadpens.com/nad-pen-vs-vial/): Volume, concentration, shelf life, and price. [Markdown](https://nadpens.com/nad-pen-vs-vial/index.md)
+- [Storage](https://nadpens.com/nad-storage/): The seller's temperature, light, and discard lines. [Markdown](https://nadpens.com/nad-storage/index.md)
+- [Testing and COAs](https://nadpens.com/nad-testing-coa/): Available on request, according to the seller. No certificate is published here. [Markdown](https://nadpens.com/nad-testing-coa/index.md)
+- [U.S. legal status](https://nadpens.com/nad-legal-status/): No FDA approval status and no WADA status are stated. [Markdown](https://nadpens.com/nad-legal-status/index.md)
+- [Research](https://nadpens.com/nad-research/): Covarrubias et al. 2021 and Gindri et al. 2024 are named and not summarized as advice. [Markdown](https://nadpens.com/nad-research/index.md)
+- [FAQ](https://nadpens.com/faq/): Short answers, each one sourced. [Markdown](https://nadpens.com/faq/index.md)
+- [Lab Notes](https://nadpens.com/lab-notes/): No notes are posted as of November 26, 2026. [Markdown](https://nadpens.com/lab-notes/index.md)
+- [About](https://nadpens.com/about/): Ownership and editorial rules. [Markdown](https://nadpens.com/about/index.md)
+
+## Products referenced
+
+- [NAD+ 1600mg Pen](https://palmbeach-vitality.store/product/nad-1600mg-pen/?utm_source=nadpens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_1600): 1600 mg in a 3 mL pre-filled pen, $200 on November 25, 2026.
+- [NAD+ 1000mg Pen](https://palmbeach-vitality.store/product/nad-1000mg-pen/?utm_source=nadpens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_1000): 1000 mg in a 3 mL pre-filled pen, $128 on November 25, 2026.
+- [NAD+ Pen 500mg](https://palmbeach-vitality.store/product/nad-pen-500mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=site&utm_content=llms_pen_500): 500 mg in a 3 mL pre-filled pen, $120 on November 25, 2026.
+- [NAD+ 1000mg Vial](https://palmbeach-vitality.store/product/nad-1000mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=site&utm_content=llms_vial_1000): 1000 mg in a 10 mL liquid vial, $102 on November 25, 2026.
+- [NAD+ 500mg Vial](https://palmbeach-vitality.store/product/nad-500mg/?utm_source=nadpens&utm_medium=referral&utm_campaign=site&utm_content=llms_vial_500): 500 mg in a 10 mL liquid vial, $90 on November 25, 2026.
+
+## Key sources
+
+- [PubChem: Nadide, CID 5892](https://pubchem.ncbi.nlm.nih.gov/compound/5892)
+- Covarrubias AJ, Perrone R, Grozio A, Verdin E. NAD(+) metabolism and its roles in cellular processes during ageing. Nat Rev Mol Cell Biol. 2021;22:119-141. https://doi.org/10.1038/s41580-020-00313-x
+- Gindri IM, Ferrari G, Pinto LPS, Bicca J, Dos Santos IK, Dallacosta D. Evaluation of safety and effectiveness of NAD in different clinical conditions: a systematic review. Am J Physiol Endocrinol Metab. 2024;326:E417-E427. https://doi.org/10.1152/ajpendo.00242.2023
+- [Palm Beach Vitality: NAD+ 1600mg Pen](https://palmbeach-vitality.store/product/nad-1600mg-pen/)
+- [Palm Beach Vitality: NAD+ 1000mg Pen](https://palmbeach-vitality.store/product/nad-1000mg-pen/)
+- [Palm Beach Vitality: NAD+ Pen 500mg](https://palmbeach-vitality.store/product/nad-pen-500mg/)
+- [Palm Beach Vitality: NAD+ 1000mg Vial](https://palmbeach-vitality.store/product/nad-1000mg/)
+- [Palm Beach Vitality: NAD+ 500mg Vial](https://palmbeach-vitality.store/product/nad-500mg/)
