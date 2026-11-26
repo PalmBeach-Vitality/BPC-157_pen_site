@@ -103,6 +103,10 @@
     .map { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0; margin: 18px 0 0; list-style: none; }
     .map li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 16px; background: var(--card); border-radius: var(--radius); border: 1px solid var(--line); }
     .map span { color: var(--mute); text-align: right; }
+    .listen { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 22px; align-items: start; margin-top: 18px; }
+    .player { position: relative; padding-top: 56.25%; background: #111; border-radius: var(--radius); overflow: hidden; }
+    .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .credit { margin: 0; }
     details { border-top: 1px solid var(--line); padding: 14px 0; }
     summary { cursor: pointer; font-family: var(--display); font-size: 1.35rem; }
     footer { border-top: 1px solid var(--line); padding: 28px 0 48px; }
@@ -112,7 +116,7 @@
     .swatch { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 10px 6px 6px; font: 500 12px/1 var(--mono); }
     .swatch i { width: 28px; height: 28px; border-radius: 50%; display: block; border: 1px solid var(--line); }
     @media (max-width: 980px) {
-      .hero, .stats, .cards, .cards:last-child, .bridge, .facts, .step-list, .status-list, .map, .header-inner { display: block; }
+      .hero, .stats, .cards, .cards:last-child, .bridge, .facts, .step-list, .status-list, .map, .listen, .header-inner { display: block; }
       nav { display: none; }
       .hero-fig { margin-right: 0; border-radius: var(--radius); }
       .stats article, .map li { margin-bottom: 12px; }
@@ -129,6 +133,8 @@
         <nav>
           <a href="#formats">Formats</a>
           <a href="#compound">What NAD+ is</a>
+          <a href="#what-it-is">What it is</a>
+          <a href="#how-its-made">How it's made</a>
           <a href="#compare">Pen vs vial</a>
           <a href="#map">Site map</a>
           <a href="#faq">FAQ</a>
@@ -301,12 +307,38 @@
         <p class="fine">The dial and the click count are format specifications on the seller’s pen pages. This template does not turn them into instructions for use.</p>
       </section>
 
+      <section class="wrap" id="what-it-is">
+        <p class="eyebrow">Listening · What it is</p>
+        <h2>What it is.</h2>
+        <p class="section-lead">Official YouTube player only. The recording stays on YouTube.</p>
+        <div class="listen">
+          <div class="player">
+            <iframe src="https://www.youtube-nocookie.com/embed/zp1tWOm0q4I" title="Yo-Yo Ma plays Bach Cello Suite No. 3 in C Major, BWV 1009, I. Prélude, Sony Classical" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="credit"><strong>Yo-Yo Ma</strong>, cello. Johann Sebastian Bach, Cello Suite No. 3 in C Major, BWV 1009, I. Prélude. Released by Sony Classical.</p>
+        </div>
+      </section>
+
+      <section class="wrap" id="how-its-made">
+        <p class="eyebrow">Listening · How it’s made</p>
+        <h2>How it’s made.</h2>
+        <p class="section-lead">Official YouTube player only. The recording stays on YouTube.</p>
+        <div class="listen">
+          <div class="player">
+            <iframe src="https://www.youtube-nocookie.com/embed/W124_mqwSdc" title="Yo-Yo Ma plays Bach Cello Suite No. 5 in C minor, BWV 1011, Gavottes I and II, live at WGBH" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="credit"><strong>Yo-Yo Ma</strong>, cello. Johann Sebastian Bach, Cello Suite No. 5 in C minor, BWV 1011, Gavottes I &amp; II. Live at WGBH.</p>
+        </div>
+      </section>
+
       <section class="sitemap wrap" id="map">
         <p class="eyebrow">05 · Site map</p>
         <h2>The same page set as the other pen sites.</h2>
         <ul class="map">
           <li><strong>Home</strong><span>Formats, compound, storage, disclosure</span></li>
           <li><strong>What NAD+ is</strong><span>Dinucleotide identity, not a peptide</span></li>
+          <li><strong>What it is</strong><span>Yo-Yo Ma, Suite No. 3 Prélude, Sony Classical</span></li>
+          <li><strong>How it’s made</strong><span>Yo-Yo Ma, Suite No. 5 Gavottes, live at WGBH</span></li>
           <li><strong>Pen vs vial</strong><span>3 mL cartridge against the 10 mL vial</span></li>
           <li><strong>Storage</strong><span>2–8 °C, no freeze, light protection</span></li>
           <li><strong>Testing and COA</strong><span>Certificate on request</span></li>
